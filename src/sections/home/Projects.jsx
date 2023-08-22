@@ -17,7 +17,7 @@ const Projects = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.paddings} bg-slate-800 text-white`}
+      className={`${styles.paddings} bg-[#323663] text-white`}
     >
       <section className="flex flex-col lg:flex-row gap-10">
         <section className="flex-1 flex flex-col gap-10 relative">
