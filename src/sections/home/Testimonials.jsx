@@ -16,7 +16,7 @@ const Testimonials = () => {
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
-     className={`${styles.paddings} flex flex-col gap-5 md:gap-32 md:flex-row text-white bg-slate-900 p-5 z-10 relative`}>
+     className={`${styles.paddings} flex flex-col gap-5 md:gap-32 md:flex-row text-white bg-primary p-5 z-10 relative`}>
      <section className="flex-1">
      <TypingText element="h3" title="| Testimonios" />
       <h2>Lo que nuestros usuarios opinan</h2>

@@ -62,21 +62,24 @@ const Video = () => {
             opacity,
             height,
             width,
-            backgroundImage: "linear-gradient(to right, var(--primary-blue) 30%, #9e5ef3 80%, var(--primary-purple) 100%)",
+            // backgroundImage: "",
             borderWidth
             }}
           className={`${styles.flexCenter} w-full mx-auto mt-7 border-transparent rounded-lg`}
         >
-          <video autoPlay muted loop className="w-full h-full" controls>
-            <source src={"/videos/mainVideo.mp4"} type="video/mp4"/>
-          </video>
+          <div className="flex p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg">
+            <video autoPlay muted loop className="w-full h-full" controls>
+              <source src={"/videos/mainVideo.mp4"} type="video/mp4"/>
+            </video>
+          </div>
+         
         </motion.section>
       </div>
       {/* Background section */}
       <div>
         <motion.div
           style={{y}}
-          className="absolute bottom-0 -left-0 bg-primary-purple w-20 h-[50%]"
+          className="absolute bottom-0 -left-0 bg-primary w-20 h-[50%]"
         >
           <div className="flex flex-col h-full">
             <div className="border-b border-white text-white text-2xl flex flex-col justify-center items-center h-1/2">
@@ -93,7 +96,7 @@ const Video = () => {
           style={{
             y: yInverse
           }}
-          className="absolute top-0 -right-0 bg-primary-purple w-20 h-[50%]"
+          className="absolute top-0 -right-0 bg-primary w-20 h-[50%]"
         >
           <div className="flex flex-col h-full">
             <div className="border-b border-white text-white text-2xl flex flex-col justify-center items-center h-1/2">

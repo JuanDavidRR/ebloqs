@@ -27,7 +27,8 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html
       lang="es"
-      className={`${raleway.variable} ${poppins.variable} w-full text-slate-900 pt-20 md:pt-12`}
+      // className={`${raleway.variable} ${poppins.variable} w-full text-slate-900 pt-20 md:pt-12`}
+      className={`Gotham w-full text-slate-900 pt-20 md:pt-12`}
     >
       <body className="w-full">
         <Navbar/>

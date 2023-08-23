@@ -16,11 +16,17 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
+        'primary': '#170658',
+        'secondary': '#8966F0',
+        'tertiary': '#2504CA',
         'primary-blue': '#00bedc',
         'primary-purple': '#7b26e8',
       },
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
+      },
+      fontFamily: {
+        custom: ['Gotham'],
       },
     },
   },

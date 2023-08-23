@@ -27,8 +27,8 @@ const Calculator = () => {
   });
   return (
     <section className={`${styles.paddings}`}>
-      <div className="flex justify-center items-center p-5 bg-primary-purple rounded-xl">
-        <div className="flex justify-center items-center p-5 bg-primary-blue rounded-xl w-full">
+      <div className="flex justify-center items-center p-5 bg-tertiary rounded-xl">
+        <div className="flex justify-center items-center p-5 bg-secondary rounded-xl w-full">
           <div className="flex flex-col rounded-xl bg-white w-full py-12">
             <div className="flex items-center justify-center">
               <h3>

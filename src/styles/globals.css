@@ -5,6 +5,9 @@
 @import "tailwindcss/utilities";
 
 :root {
+  --primary: #170658;
+  --secondary: #8966F0;
+  --tertiary: #2504CA;
   --primary-blue: #00bedc;
   --primary-purple: #7b26e8;
   --gradient: linear-gradient(
@@ -18,10 +21,18 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: var(--font-poppins);
+  /* font-family: var(--font-poppins); */
+  /* font-family: url('/public/fonts/gotham.otf'); */
   font-weight: 400;
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham'), url(/public/fonts/gotham.otf) format('opentype');
+  font-display: swap;
+}
+
 p{
   font-size: 17px;
 
@@ -32,7 +43,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-raleway);
+  /* font-family: var(--font-raleway); */
+  font-family: url('/public/fonts/gotham.otf');
 }
 
 h1 {
@@ -57,9 +69,9 @@ h4{
   display: inline-block; /* or use another appropriate display value */
   background: linear-gradient(
     to right,
-    var(--primary-blue) 10%,
-    #9e5ef3 40%,
-    var(--primary-purple) 100%
+    var(--primary) 10%,
+    var(--secondary) 40%,
+    var(--tertiary) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;

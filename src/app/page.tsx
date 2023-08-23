@@ -7,6 +7,7 @@ import ProblemSolution from "@/sections/home/ProblemSolution";
 import TokenEbl from "@/sections/home/TokenEbl";
 import Ecosystem from "@/sections/home/Ecosystem";
 import Calculator from "@/sections/home/Calculator";
+import Example from "@/sections/home/Example";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <ProblemSolution/>
         <Ecosystem/>
         <Calculator/>
+        <Example/>
         <TokenEbl/>
         <Projects/>
         <Team/> 

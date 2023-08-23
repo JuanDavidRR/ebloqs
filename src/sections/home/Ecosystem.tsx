@@ -22,7 +22,7 @@ const Ecosystem = () => {
   });
   return (
     <section
-      className={`flex flex-col bg-[#323663] ${styles.paddings} gap-14 relative`}
+      className={`flex flex-col bg-primary ${styles.paddings} gap-14 relative`}
       ref={scrollRef}
     >
       <div className="flex">
