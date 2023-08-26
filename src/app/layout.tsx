@@ -11,7 +11,6 @@ const archivo = Archivo({
   weight: ["400", "500", "600", "700", "900"],
 });
 
-
 export const metadata = {
   title: "Ebloqs",
   description: "La nueva forma de invertir",
@@ -23,11 +22,14 @@ export default function RootLayout({ children }: LayoutProps) {
       lang="es"
       className={`${archivo.variable} w-full text-slate-900 pt-10 md:p-0`}
     >
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body className="w-full">
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }
