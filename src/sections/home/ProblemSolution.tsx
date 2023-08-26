@@ -9,7 +9,7 @@ import { useRef } from "react";
 import { AiOutlineAlert, AiOutlineBulb } from "react-icons/ai";
 import ecoImg from "public/images/1.png";
 import { fadeIn } from "@/utils/animations/motion";
-import blockchain from "public/images/blockchain.png";
+import blockchain from "public/images/myblockchain.png";
 import phone from 'public/images/phoneExample.png'
 
 const ProblemSolution = () => {
