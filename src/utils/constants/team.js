@@ -11,7 +11,6 @@ export const team = [
         image: roberto,
         linkedin: '/',
         job: 'CEO',
-        timeAnimate: 0.5
     },
     {
         id: 2,
@@ -20,7 +19,6 @@ export const team = [
         image: javier,
         linkedin: '/',
         job: 'CGO',
-        timeAnimate: 1
     },
     {
         id: 3,
@@ -29,7 +27,6 @@ export const team = [
         image: nicolas,
         linkedin: '/',
         job: 'CMO',
-        timeAnimate: 1.5
 
     },
 ]

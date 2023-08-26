@@ -1,10 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
-import userImg from "public/images/user.png";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { AnimationControls, motion } from "framer-motion";
-import { fadeIn } from "@/utils/animations/motion";
 
 const TeamCard = ({
   fullname,
@@ -13,7 +11,6 @@ const TeamCard = ({
   image,
   linkedin,
   animate,
-  timeAnimate,
 }: TeamCardProps) => {
   return (
     <motion.section
@@ -64,9 +61,8 @@ interface TeamCardProps {
   fullname: string;
   job: string;
   quote: string;
-  image: string;
+  image: StaticImageData;
   linkedin: string;
   animate: AnimationControls;
-  timeAnimate: number;
 }
 export default TeamCard;
