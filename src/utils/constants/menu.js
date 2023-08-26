@@ -11,23 +11,23 @@ export const links = [
     },
     {
       id: 3,
-      title: "Token EBL",
-      url: "/#token",
+      title: "Invierte",
+      url: "/#invierte",
     },
     {
       id: 4,
-      title: "Testimonios",
-      url: "/#testimonios",
+      title: "Token EBL",
+      url: "/#token-ebl",
     },
     {
       id: 5,
-      title: "Equipo",
-      url: "/#equipo",
+      title: "Proyectos",
+      url: "/#proyectos",
     },
     {
       id: 6,
-      title: "Proyectos",
-      url: "/proyectos",
+      title: "Equipo ",
+      url: "/#equipo",
     },
   ];
   

@@ -6,12 +6,13 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/animations/motion";
 import styles from "@/styles";
 
-const Button = ({ url, content }) => {
+const Button = ({ url, content, styleText }) => {
   return (
     <motion.div
       variants={fadeIn("up", "tween", 0.5, 1)}
       initial="hidden"
       whileInView="show"
+      className={styleText}
     >
       <Link href={url} className={`${styles.btn}`}>
         {content}

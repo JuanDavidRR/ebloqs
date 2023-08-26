@@ -5,7 +5,8 @@ export const projects = [
         description: 'Lorem ipsum dolor sit amet, consectetur adip id el aspect',
         image: 'https://images.pexels.com/photos/5980856/pexels-photo-5980856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         investors: 24,
-        goal: '10.000 USD'
+        goal: '10.000 USD',
+        animation: 0.5,
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const projects = [
         description: 'Lorem ipsum dolor sit amet, consectetur adip id el aspect',
         image: 'https://images.pexels.com/photos/5980856/pexels-photo-5980856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         investors: 24,
-        goal: '10.000 USD'
+        goal: '10.000 USD',
+        animation: 1,
     },
     {
         id: 3,
@@ -21,6 +23,7 @@ export const projects = [
         description: 'Lorem ipsum dolor sit amet, consectetur adip id el aspect',
         image: 'https://images.pexels.com/photos/5980856/pexels-photo-5980856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         investors: 24,
-        goal: '10.000 USD'
+        goal: '10.000 USD',
+        animation: 1.5,
     }
 ]

@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import Button from "@/components/Button";
 import { TypingText } from "@/components/CustomTexts";
 import ProjectCard from "@/components/ProjectCard";
 import styles from "@/styles";
-import { staggerContainer } from "@/utils/animations/motion";
+import { fadeIn, staggerContainer } from "@/utils/animations/motion";
 import { projects } from "@/utils/constants/projects";
 import { motion } from "framer-motion";
 
@@ -13,13 +13,18 @@ import React from "react";
 const Projects = () => {
   return (
     <motion.section
+    id="proyectos"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.paddings} bg-primary text-white`}
+      className={`${styles.paddings} bg-black-market text-white text-center relative`}
     >
       <section className="flex flex-col lg:flex-row gap-10">
+      <motion.div
+        variants={fadeIn("up", "tween", 0.5, 1)}
+        className="hidden md:gradient-01 z-0"
+      />
         <section className="flex-1 flex flex-col gap-10 relative">
           <TypingText element="h4" title="Haz parte del futuro" />
           <h2>Descubre el futuro</h2>
@@ -30,12 +35,12 @@ const Projects = () => {
             Unde corrupti totam quidem quas.
           </p>
           <section className="flex flex-col md:flex-row gap-10 mx-auto">
-            {projects.map(project => (
-                <ProjectCard key={project.id} {...project} />
+            {projects.map((project) => (
+              <ProjectCard key={project.id} {...project} />
             ))}
           </section>
           <section className="mx-auto">
-          <Button url="/marketplace" content="Ver projectos" />
+            <Button url="/marketplace" content="Ver proyectos" />
           </section>
         </section>
       </section>

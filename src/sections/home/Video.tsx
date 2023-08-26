@@ -49,14 +49,14 @@ const Video = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.30 }}
-      className="relative "
+      className={`${styles.paddings} relative bg-black-market text-white`}
     >
       <div
-        className={`${styles.paddings} lg:pb-32 flex flex-col gap-5 text-center mx-auto relative`}
+        className={`lg:pb-32 flex-col gap-5 text-center mx-auto relative`}
         ref={scrollRef}
       >
         <TypingText element="h3" title="Ebloqs te explica" />
-        <h2>¿Qué es la tecnología <span className="gradient-text text-inherit">Blockchain</span></h2>
+        <h2>¿Qué es la tecnología Blockchain</h2>
         <motion.section
           style={{
             opacity,
@@ -65,9 +65,9 @@ const Video = () => {
             // backgroundImage: "",
             borderWidth
             }}
-          className={`${styles.flexCenter} w-full mx-auto mt-7 border-transparent rounded-lg`}
+          className={`${styles.flexCenter} hidden md:flex w-full mx-auto mt-7 border-transparent rounded-lg`}
         >
-          <div className="flex p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg">
+          <div className=" p-2 md:p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg">
             <video autoPlay muted loop className="w-full h-full" controls>
               <source src={"/videos/mainVideo.mp4"} type="video/mp4"/>
             </video>
@@ -75,8 +75,14 @@ const Video = () => {
          
         </motion.section>
       </div>
+
+      <div className="md:hidden mt-5 flex p-2 md:p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg">
+            <video autoPlay muted loop className="w-full h-full" controls>
+              <source src={"/videos/mainVideo.mp4"} type="video/mp4"/>
+            </video>
+          </div>
       {/* Background section */}
-      <div>
+      {/* <div>
         <motion.div
           style={{y}}
           className="absolute bottom-0 -left-0 bg-primary w-20 h-[50%]"
@@ -109,7 +115,7 @@ const Video = () => {
             </div>
           </div>
         </motion.div>
-      </div>
+      </div> */}
     </motion.section>
   );
 };

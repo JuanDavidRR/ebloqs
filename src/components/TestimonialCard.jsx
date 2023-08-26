@@ -3,37 +3,40 @@ import Image from "next/image";
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import Button from "./Button";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/animations/motion";
 
-const TestimonialCard = ({fullname, image, quote}) => {
+const TestimonialCard = ({ fullname, image, quote, animation }) => {
   return (
-    <section className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:gap-6 my-10">
-      <section className="text-slate-900 bg-white flex flex-col rounded-xl gap-5 p-5 duration-300 hover:shadow-lg hover:shadow-purple-600 sha">
-        <div className="flex gap-5">
+    <motion.section
+      variants={fadeIn("up", "tween", animation, 0)}
+      className="text-slate-900 bg-white flex flex-col justify-center rounded-xl gap-5 p-5 duration-300 border-[1px] border-gray-300 shadow-lg shadow-black-market hover:shadow-lg hover:shadow-purple-600 odd:scale-[0.9]"
+    >
+      <div className="flex items-center gap-5">
+        <div>
           <Image
             src={image}
-            width={60}
-            height={20}
-            className="rounded-full"
+            width={70}
+            height={70}
+            className="flex-[0.4] rounded-full"
             alt=""
           />
-          <div className="flex flex-col gap-3">
-            <h4>{fullname}</h4>
-            <div className="flex gap-1">
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-            </div>
-          </div>
         </div>
-        <section>
-          <p>
-            {quote}
-          </p>
+        <section className="flex flex-col gap-3">
+          <h5 className="text-2xl">{fullname}</h5>
+          <div className="flex gap-1">
+            <AiFillStar className="text-2xl md:text-3xl text-purple-900" />
+            <AiFillStar className="text-2xl md:text-3xl text-purple-900" />
+            <AiFillStar className="text-2xl md:text-3xl text-purple-900" />
+            <AiFillStar className="text-2xl md:text-3xl text-purple-900" />
+            <AiFillStar className="text-2xl md:text-3xl text-purple-900" />
+          </div>
         </section>
+      </div>
+      <section>
+        <p>{quote}</p>
       </section>
-    </section>
+    </motion.section>
   );
 };
 

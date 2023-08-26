@@ -1,28 +1,35 @@
-import user from 'public/images/user.png';
+import roberto from 'public/images/rbetancourt.png';
+import javier from 'public/images/jcervantes.png';
+import nicolas from 'public/images/zyro-image.png';
+
 
 export const team = [
     {
         id: 1,
-        fullname: 'Beni Tocamelo',
+        fullname: 'Roberto Betancourt',
         quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt aspernatur obcaecati magnam sint a odio, eveniet in.',
-        image: `${user}`,
+        image: roberto,
         linkedin: '/',
-        job: ''
+        job: 'CEO',
+        timeAnimate: 0.5
     },
     {
         id: 2,
-        fullname: 'Beni Tocamelo',
+        fullname: 'Javier Cervantes',
         quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt aspernatur obcaecati magnam sint a odio, eveniet in.',
-        image: `${user}`,
+        image: javier,
         linkedin: '/',
-        job: ''
+        job: 'CGO',
+        timeAnimate: 1
     },
     {
         id: 3,
-        fullname: 'Beni Tocamelo',
+        fullname: 'Nicolas Betancourt',
         quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt aspernatur obcaecati magnam sint a odio, eveniet in.',
-        image: `${user}`,
+        image: nicolas,
         linkedin: '/',
-        job: ''
+        job: 'CMO',
+        timeAnimate: 1.5
+
     },
 ]

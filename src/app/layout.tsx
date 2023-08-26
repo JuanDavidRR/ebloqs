@@ -2,21 +2,15 @@ import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import "@/styles/globals.css";
 import "@/styles/animations.css";
-import { Raleway, Poppins } from "next/font/google";
+import { Archivo, Poppins } from "next/font/google";
 
-const raleway = Raleway({
+const archivo = Archivo({
   subsets: ["latin"],
-  variable: "--font-raleway",
-  display: "swap",
-  weight: ["500", "600", "700", "900"],
-});
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  variable: "--font-poppins",
+  variable: "--font-archivo",
   display: "swap",
   weight: ["400", "500", "600", "700", "900"],
 });
+
 
 export const metadata = {
   title: "Ebloqs",
@@ -27,8 +21,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html
       lang="es"
-      // className={`${raleway.variable} ${poppins.variable} w-full text-slate-900 pt-20 md:pt-12`}
-      className={`Gotham w-full text-slate-900 pt-20 md:pt-12`}
+      className={`${archivo.variable} w-full text-slate-900 pt-10 md:p-0`}
     >
       <body className="w-full">
         <Navbar/>

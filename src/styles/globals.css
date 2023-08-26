@@ -5,9 +5,10 @@
 @import "tailwindcss/utilities";
 
 :root {
+  --dark: #25254a;
   --primary: #170658;
-  --secondary: #8966F0;
-  --tertiary: #2504CA;
+  --secondary: #6947d1;
+  --tertiary: #2504ca;
   --primary-blue: #00bedc;
   --primary-purple: #7b26e8;
   --gradient: linear-gradient(
@@ -21,21 +22,48 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* font-family: var(--font-poppins); */
+  font-family: var(--font-archivo);
   /* font-family: url('/public/fonts/gotham.otf'); */
-  font-weight: 400;
-  scroll-behavior: smooth;
+  font-weight: 300;
 }
 
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
 @font-face {
-  font-family: 'Gotham';
-  src: local('Gotham'), url(/public/fonts/gotham.otf) format('opentype');
+  font-family: "Gotham";
+  src: local("Gotham"), url(/public/fonts/gotham.otf) format("opentype");
   font-display: swap;
 }
 
-p{
-  font-size: 17px;
+/* Target the whole scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-purple);
+}
+
+
+p,
+a {
+  font-size: 19px;
 }
 h1,
 h2,
@@ -44,24 +72,24 @@ h4,
 h5,
 h6 {
   /* font-family: var(--font-raleway); */
-  font-family: url('/public/fonts/gotham.otf');
+  font-family: url("/public/fonts/gotham.otf");
 }
 
 h1 {
-  font-size: 3.5rem;
-  font-weight: 900;
+  font-size: 6rem;
+  font-weight: 600;
 }
 h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  line-height: 2.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.5rem;
 }
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
-h4{
-  font-size: 1.2rem;
+h4 {
+  font-size: 1.7rem;
   font-weight: 600;
 }
 
@@ -70,13 +98,21 @@ h4{
   background: linear-gradient(
     to right,
     var(--primary) 10%,
-    var(--secondary) 40%,
-    var(--tertiary) 100%
+    var(--tertiary) 40%,
+    var(--secondary) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-weight: bold;
+}
+
+.background-gradient {
+  background: linear-gradient(
+    to right,
+    var(--primary) 10%,
+    var(--tertiary) 40%,
+    var(--secondary) 100%
+  );
 }
 
 .gradient-01 {
@@ -90,16 +126,31 @@ h4{
     hsl(221deg 73% 70%) 74%,
     hsl(220deg 76% 51%) 100%
   );
-  filter: blur(100px);
+  filter: blur(170px);
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
 }
 
 .hero-gradient {
-  background: linear-gradient(
-    97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
+  background-image: linear-gradient(
+    270deg,
+    hsl(295deg 76% 51%) 0%,
+    hsl(284deg 70% 73%) 26%,
+    hsl(257deg 70% 86%) 39%,
+    hsl(202deg 92% 90%) 50%,
+    hsl(215deg 77% 81%) 61%,
+    hsl(221deg 73% 70%) 74%,
+    hsl(220deg 76% 51%) 100%
   );
+  filter: blur(170px);
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  right: -10%;
+  top: 0%;
 }
 
 .gradient-02 {
@@ -111,14 +162,6 @@ h4{
 
   background: #7aebfb;
   filter: blur(190px);
-}
-
-.glassmorphism {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .gradient-03 {
@@ -133,46 +176,19 @@ h4{
   transform: rotate(0deg);
 }
 
-.gradient-04 {
-  position: absolute;
-  width: 304px;
-  height: 100vh;
-  left: 30%;
-  top: 10%;
-
-  background: rgba(45, 72, 152, 0.75);
-  filter: blur(200px);
-  transform: rotate(-53.13deg);
-}
-
-.gradient-05 {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-
-.feedback-gradient {
-  position: absolute;
-  width: 200px;
-  height: 316px;
-  left: 0px;
-  top: 0px;
-
-  background: #8d39a3;
-  filter: blur(175px);
-}
-
 .footer-gradient {
   position: absolute;
-  width: 500px;
-  height: 100px;
-  left: 37%;
-  bottom: 0;
-
-  background: #65c4fa;
-  filter: blur(150px);
+  width: 400px;
+  height: 200px;
+  left: 50%;
+  top: 25%;
+  filter: blur(100px);
+  background: radial-gradient(
+    #47cbff9a 60%,
+    rgba(161, 60, 255, 0.555) 50%,
+    #c547ff 100%
+  );
+  z-index: 0;
 }
 
 .button {
@@ -203,10 +219,64 @@ h4{
   top: 15px;
 }
 
+.team-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+}
+
 .card-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
+}
+
+.benefits-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* Reset default styles */
+input[type="range"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 50px;
+}
+
+/* Webkit (Chrome, Safari) */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-purple);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-purple);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Edge */
+input[type="range"]::-ms-thumb {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-purple);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .logo {
@@ -249,39 +319,51 @@ h4{
   padding-bottom: 5px;
 }
 
-.hamburger {
-  display: none;
-}
-
 .shadown-card {
-  -webkit-box-shadow: 1px 6px 22px 7px rgba(0,0,0,0.35);
-  -moz-box-shadow: 1px 6px 22px 7px rgba(0,0,0,0.35);
-  box-shadow: 1px 6px 22px 7px rgba(0,0,0,0.35);
+  -webkit-box-shadow: 1px 6px 22px 7px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 1px 6px 22px 7px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 6px 22px 7px rgba(0, 0, 0, 0.35);
 }
 
 .box-shadown {
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
-  0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
-  0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
 @media screen and (max-width: 940px) {
-  h1{
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  h1 {
     font-size: 5rem;
   }
-  h2{
+  h2 {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+  }
+  h3 {
     font-size: 1.7rem;
   }
-  h3{
-    font-size: 1.3rem;
+
+  .gradient-01, .hero-gradient {
+    filter: blur(70px);
+    height: 300px;
+    width: 250px;
+    right: 14%;
+    top: 10%;
   }
 
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
+  .footer-gradient {
+    width: 400px;
+    height: 200px;
+    left: 0%;
+    top: 32%;
+    filter: blur(60px);
+    z-index: 0;
   }
+
   .links {
     position: absolute;
     flex-direction: column;
@@ -300,5 +382,28 @@ h4{
 
   .activeM {
     left: 0px;
+  }
+
+  /* Reset default styles */
+  input[type="range"] {
+    height: 15px;
+  }
+
+  /* Webkit (Chrome, Safari) */
+  input[type="range"]::-webkit-slider-thumb {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Firefox */
+  input[type="range"]::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Edge */
+  input[type="range"]::-ms-thumb {
+    width: 30px;
+    height: 30px;
   }
 }

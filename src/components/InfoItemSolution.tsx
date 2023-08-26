@@ -46,16 +46,16 @@ const InfoItemSolution = ({  description, icon, title, classNameTitle, mode }: I
         <div className={`${mode === 'light' ? "bg-primary-purple bg-opacity-5" : "bg-white border border-primary-purple"}  rounded-full p-2 `}>
           {icon}
         </div>
-        <p 
-          className={`${classNameTitle} font-bold text-lg`}
+        <h3 
+          className={`${classNameTitle}`}
         >
           {title.split("").map((letter, index) => (
-            <motion.span key={index} variants={letterVariants}>
+            <motion.span className="font-bold" key={index} variants={letterVariants}>
               {letter}
             </motion.span>
           ))}
-        </p>
-        <p className="text-sm font-extralight">
+        </h3>
+        <p>
           {description.split("").map((letter, index) => (
             <motion.span key={index} variants={letterVariants}>
               {letter}

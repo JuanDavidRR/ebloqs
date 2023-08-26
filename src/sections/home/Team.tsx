@@ -3,8 +3,15 @@
 import { TypingText } from "@/components/CustomTexts";
 import TeamCard from "@/components/TeamCard";
 import styles from "@/styles";
+import { fadeIn } from "@/utils/animations/motion";
 import { team } from "@/utils/constants/team";
-import { motion, useAnimation, useInView, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useAnimation,
+  useInView,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import React, { useEffect, useRef } from "react";
 
 const Team = () => {
@@ -17,13 +24,11 @@ const Team = () => {
     // offset: [-5, 20],
     offset: [0, 20],
   });
-  
+
   useEffect(() => {
-    if (isInView)
-      slideControls.start("showShadow");
-    else 
-      slideControls.start("hiddenShadown");
-  }, [isInView])
+    if (isInView) slideControls.start("showShadow");
+    else slideControls.start("hiddenShadown");
+  }, [isInView]);
 
   // const x = useTransform(scrollYProgress, [0, 0.2], ["-100%", "0%"], {
   //   clamp: true,
@@ -35,10 +40,10 @@ const Team = () => {
   //   clamp: true,
   // });
 
-  const x = useTransform(scrollYProgress, [0, 0.2], ["0%", "-100%"], {
+  const x = useTransform(scrollYProgress, [0, 0.2], ["0%", "-50%"], {
     clamp: true,
   });
-  const xReverse = useTransform(scrollYProgress, [0, 0.2], ["0%", "100%"], {
+  const xReverse = useTransform(scrollYProgress, [0, 0.2], ["0%", "50%"], {
     clamp: true,
   });
   const y = useTransform(scrollYProgress, [0, 0.2], ["0%", "100%"], {
@@ -46,33 +51,49 @@ const Team = () => {
   });
 
   return (
-    <section className={styles.paddings} ref={scrollRef}>
-      <TypingText element="h3" title="| Nosotros" />
-      <h2>Conoce nuestro <span className="gradient-text text-inherit">equipo</span> de trabajo</h2>
-      <section className="grid grid-cols-[repeat(auto-fit,minmax(50px,1fr))] gap-12 my-10">
+    <motion.section
+    id="equipo"
+      className={`${styles.paddings} bg-slate-200 `}
+      ref={scrollRef}
+    >
+        <TypingText textStyles="text-center" element="h4" title="| Haz parte del futuro" />
+      <h2 className="text-center">
+        Conoce <span className="gradient-text font-bold">nuestro equipo</span>{" "}
+        de trabajo
+      </h2>
+      <section className="hidden gap-20 my-10">
         {team.map((teamMember, index) => (
           <motion.div
             style={{
-              ...index === 0 && {
-                x
-              },
-              ...index === 1 && {
-                y
-              },
-              ...index === 2 && {
-                x: xReverse
-              }
+              ...(index === 0 && {
+                y,
+              }),
+              ...(index === 1 && {
+                y,
+              }),
+              ...(index === 2 && {
+                y,
+              }),
             }}
             key={teamMember.id}
           >
-            <TeamCard
-              animate={slideControls}
-              {...teamMember}
-            />
+            <TeamCard animate={slideControls} {...teamMember} />
           </motion.div>
         ))}
       </section>
-    </section>
+      <motion.section
+        variants={fadeIn("up", "tween", 1, 0)}
+        className="md:w-[90%] mx-auto flex md:flex-row flex-col gap-5 my-10"
+      >
+        {team.map((teamMember) => (
+          <TeamCard
+            key={teamMember.id}
+            animate={slideControls}
+            {...teamMember}
+          />
+        ))}
+      </motion.section>
+    </motion.section>
   );
 };
 

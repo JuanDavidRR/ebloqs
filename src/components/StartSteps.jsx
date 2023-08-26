@@ -6,7 +6,7 @@ const StartSteps = ({ number, content, title, icon }) => (
       className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
     >
       <p className="font-bold text-[20px] text-white">
-        {number}
+        {number + 1}
       </p>
     </div>
     <div>
