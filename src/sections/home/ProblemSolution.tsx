@@ -9,6 +9,8 @@ import { useRef } from "react";
 import { AiOutlineAlert, AiOutlineBulb } from "react-icons/ai";
 import ecoImg from "public/images/1.png";
 import { fadeIn } from "@/utils/animations/motion";
+import blockchain from "public/images/blockchain.png";
+import phone from 'public/images/phoneExample.png'
 
 const ProblemSolution = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -66,7 +68,7 @@ const ProblemSolution = () => {
           className="w-full h-full object-cover"
         >
           <Image
-            src="/images/blockchain.png"
+            src={blockchain}
             width={650}
             height={650}
             alt="cubo"
@@ -74,7 +76,7 @@ const ProblemSolution = () => {
         </motion.div>
         <motion.div className="absolute">
           <Image
-            src="/images/phoneExample.png"
+            src={phone}
             width={400}
             height={400}
             alt="phone"
