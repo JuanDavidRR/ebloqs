@@ -72,7 +72,8 @@ const Calculator = () => {
                     transition={{ duration: 0.2 }}
                     className="min-h-[300px] flex justify-center items-center text-5xl"
                   >
-                    <p>Puedes obtener {activeContent.description} y muchos otros beneificios</p>
+                    
+                    <p>Puedes obtener {activeContent.description} y muchos otros beneficios</p>
                   </motion.div>
                 </AnimatePresence>
             </div>

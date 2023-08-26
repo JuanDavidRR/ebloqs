@@ -20,11 +20,11 @@ const ProblemSolution = () => {
     offset: [0, 20],
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "25%"], {
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "50%"], {
     clamp: true,
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1.2], [1, 1.5], {
+  const scale = useTransform(scrollYProgress, [0, 1.2], [1, 1.3], {
     clamp: true,
   });
 
@@ -121,10 +121,6 @@ const ProblemSolution = () => {
         </motion.div>
       </div>
       <section className="flex flex-col mt-10 md:hidden relative">
-      <motion.div
-          variants={fadeIn("up", "tween", 0.5, 1)}
-          className="gradient-01 z-0"
-        />
         <Image className="z-10" src={ecoImg} width={500} height={500} alt="" />
         <Image className="absolute z-[1]" width={500} height={500} src={backgroundImg} alt=""/>
       </section>
