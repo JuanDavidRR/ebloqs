@@ -3,7 +3,7 @@
 import { TypingText } from "@/components/CustomTexts";
 import TeamCard from "@/components/TeamCard";
 import styles from "@/styles";
-import { fadeIn } from "@/utils/animations/motion";
+import { fadeIn, staggerContainer } from "@/utils/animations/motion";
 import { team } from "@/utils/constants/team";
 import {
   motion,
@@ -52,11 +52,19 @@ const Team = () => {
 
   return (
     <motion.section
-    id="equipo"
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      id="equipo"
       className={`${styles.paddings} bg-slate-200 `}
-      ref={scrollRef}
+      // ref={scrollRef}
     >
-        <TypingText textStyles="text-center" element="h4" title="| Haz parte del futuro" />
+      <TypingText
+        textStyles="text-center"
+        element="h4"
+        title="| Haz parte del futuro"
+      />
       <h2 className="text-center">
         Conoce <span className="gradient-text font-bold">nuestro equipo</span>{" "}
         de trabajo
@@ -83,7 +91,7 @@ const Team = () => {
       </section>
       <motion.section
         variants={fadeIn("up", "tween", 1, 0)}
-        className="md:w-[90%] mx-auto flex md:flex-row flex-col gap-5 my-10"
+        className="md:w-[90%] mx-auto flex lg:flex-row flex-col gap-5 my-10"
       >
         {team.map((teamMember) => (
           <TeamCard

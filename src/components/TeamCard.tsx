@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { AnimationControls, motion } from "framer-motion";
+import { fadeIn } from "@/utils/animations/motion";
 
 const TeamCard = ({
   fullname,
@@ -11,6 +12,7 @@ const TeamCard = ({
   image,
   linkedin,
   animate,
+  animation,
 }: TeamCardProps) => {
   return (
     <motion.section
@@ -29,6 +31,7 @@ const TeamCard = ({
       whileHover={{ scale: 1.02 }}
     >
       <motion.div
+        variants={fadeIn("up", "tween", animation, 0.5)}
         className="flex flex-col bg-white gap-0 text-center shadow-md shadow-gray-500 p-5"
       >
         <div>
@@ -64,5 +67,6 @@ interface TeamCardProps {
   image: StaticImageData;
   linkedin: string;
   animate: AnimationControls;
+  animation: number;
 }
 export default TeamCard;

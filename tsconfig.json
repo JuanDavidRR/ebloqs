@@ -31,7 +31,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/utils/constants/benefits.js", "src/sections/home/TokenEbl.tsx", "src/components/BenefitItem.jsx"  ],
+, "src/utils/constants/benefits.js", "src/sections/home/TokenEbl.tsx", "src/components/BenefitItem.jsx", "src/utils/animations/motion.ts"  ],
   "exclude": [
     "node_modules"
   ]

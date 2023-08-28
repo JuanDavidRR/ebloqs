@@ -24,7 +24,7 @@ function HorizontalWrapper({ children, direction, height }: HorizontalWrapperPro
 
   return (
     <div ref={scrollRef}>
-      <motion.div
+      {/* <motion.div
         style={{
           height: height,
           zIndex: 6,
@@ -33,7 +33,7 @@ function HorizontalWrapper({ children, direction, height }: HorizontalWrapperPro
         }}
       >
         {children}
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }

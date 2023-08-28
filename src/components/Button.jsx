@@ -9,7 +9,7 @@ import styles from "@/styles";
 const Button = ({ url, content, styleText }) => {
   return (
     <motion.div
-      variants={fadeIn("up", "tween", 0.5, 1)}
+      variants={fadeIn("down", "tween", 0.5, 1)}
       initial="hidden"
       whileInView="show"
       className={styleText}

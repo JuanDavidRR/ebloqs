@@ -41,7 +41,7 @@ const Calculator = () => {
     clamp: true,
   });
   return (
-    <section id="invierte" className={`${styles.paddings} w-full md:w-[80%] mx-auto`}>
+    <section id="invierte" className={`${styles.paddings} w-full lg:w-[80%] mx-auto`}>
       <div className="flex justify-center items-center p-1 md:p-7 bg-blue-200  rounded-xl">
         <div className="flex justify-center items-center p-1 md:p-5 background-gradient rounded-xl w-full">
           <div className="flex flex-col rounded-xl bg-white w-full p-5 md:p-20">

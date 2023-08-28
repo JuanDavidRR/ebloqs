@@ -89,7 +89,7 @@ const TokenEbl = () => {
           </motion.section>
         </section>
       </section>
-      <div className="flex flex-col md:flex-row gap-10">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(210px,1fr))] gap-10 md:gap-5 mt-10">
         {benlist.map((ben, index) => (
           <BenefitItemSolution
             title={ben.title}

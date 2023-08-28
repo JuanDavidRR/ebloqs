@@ -61,7 +61,7 @@ const Video = () => {
           style={{
             opacity,
             height,
-            width,
+            // width,
             // backgroundImage: "",
             borderWidth
             }}

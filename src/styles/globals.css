@@ -27,11 +27,15 @@
   font-weight: 300;
 }
 
-html, body {
-  scroll-behavior: smooth;
+html,
+body {
   overflow-x: hidden;
 }
 
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
 
 @font-face {
   font-family: "Gotham";
@@ -44,22 +48,18 @@ html, body {
   width: 15px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--secondary);
   border-radius: 6px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-purple);
 }
-
 
 p,
 a {
@@ -71,7 +71,6 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: var(--font-raleway); */
   font-family: url("/public/fonts/gotham.otf");
 }
 
@@ -331,6 +330,27 @@ input[type="range"]::-ms-thumb {
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+.audio-list {
+  list-style: none;
+  padding: 0;
+}
+.audio-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+audio {
+  width: 300px;
+}
+
 @media screen and (max-width: 940px) {
   html,
   body {
@@ -347,7 +367,8 @@ input[type="range"]::-ms-thumb {
     font-size: 1.7rem;
   }
 
-  .gradient-01, .hero-gradient {
+  .gradient-01,
+  .hero-gradient {
     filter: blur(70px);
     height: 300px;
     width: 250px;

@@ -9,7 +9,7 @@ import { fadeIn } from "@/utils/animations/motion";
 const TestimonialCard = ({ fullname, image, quote, animation }) => {
   return (
     <motion.section
-      variants={fadeIn("up", "tween", animation, 0)}
+      variants={fadeIn("left", "tween", animation, 0)}
       className="text-slate-900 bg-white flex flex-col justify-center rounded-xl gap-5 p-5 duration-300 border-[1px] border-gray-300 shadow-lg shadow-black-market hover:shadow-lg hover:shadow-purple-600 odd:scale-[0.9]"
     >
       <div className="flex items-center gap-5">

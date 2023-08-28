@@ -40,7 +40,7 @@ const ProblemSolution = () => {
       <div className="flex lg:w-1/2 flex-col gap-7">
         <TypingText element="h4" title="| Haz parte del futuro" />
         <h2>Problema & solución</h2>
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col lg:flex-row gap-10">
           <InfoItemSolution
             title="Problema"
             description="La gran mayoría de las inversiones fomentan la exclusividad para los grandes inversionistas.
@@ -59,7 +59,7 @@ const ProblemSolution = () => {
           />
         </div>
       </div>
-      <div className={`hidden md:${styles.flexCenter} md:w-1/2 relative`}>
+      <div className={`hidden lg:${styles.flexCenter} md:w-1/2 relative`}>
         <motion.div
           style={{
             x,
@@ -120,7 +120,7 @@ const ProblemSolution = () => {
           />
         </motion.div>
       </div>
-      <section className="flex flex-col mt-10 md:hidden relative">
+      <section className="flex flex-col mt-10 lg:hidden md:items-center relative">
         <Image className="z-10" src={ecoImg} width={500} height={500} alt="" />
         <Image className="absolute z-[1]" width={500} height={500} src={backgroundImg} alt=""/>
       </section>

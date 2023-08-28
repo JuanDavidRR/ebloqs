@@ -20,7 +20,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html
       lang="es"
-      className={`${archivo.variable} w-full text-slate-900 pt-10 md:p-0`}
+      className={`scroll-smooth ${archivo.variable} w-full text-slate-900`}
     >
       <head>
         <link rel="icon" href="/favicon.ico" />

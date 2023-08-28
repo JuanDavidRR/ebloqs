@@ -1,33 +1,33 @@
-import Hero from "@/sections/home/Hero";
-import Projects from "@/sections/home/Projects";
-import Team from "@/sections/home/Team";
-import Testimonials from "@/sections/home/Testimonials";
-import Video from "@/sections/home/Video";
-import ProblemSolution from "@/sections/home/ProblemSolution";
-import Ecosystem from "@/sections/home/Ecosystem";
-import Calculator from "@/sections/home/Calculator";
-import Example from "@/sections/home/Example";
-import TokenEbl from "@/sections/home/TokenEbl";
-import GetStarted from "@/sections/home/GetStarted";
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("@/sections/home/Hero"));
+const Projects = dynamic(() => import("@/sections/home/Projects"));
+const Team = dynamic(() => import("@/sections/home/Team"));
+const Testimonials = dynamic(() => import("@/sections/home/Testimonials"));
+const Video = dynamic(() => import("@/sections/home/Video"));
+const ProblemSolution = dynamic(() => import("@/sections/home/ProblemSolution"));
+const Ecosystem = dynamic(() => import("@/sections/home/Ecosystem"));
+const Calculator = dynamic(() => import("@/sections/home/Calculator"));
+const TokenEbl = dynamic(() => import("@/sections/home/TokenEbl"));
+const GetStarted = dynamic(() => import("@/sections/home/GetStarted"));
+const AudioPlayer = dynamic(() => import("@/sections/home/Podcast"));
+
 
 export default function Home() {
   return (
     <main>
-      <section className="relative">
-        <Hero />
-        <Video />
-        <GetStarted />
-        <ProblemSolution />
-        <Testimonials />
-        <Ecosystem />
-        <div id="invierte">
-        <Calculator />
-        </div>
-        {/* <Example /> */}
-        <TokenEbl />
-        <Projects />
-        <Team />
-      </section>
+      <Hero />
+      <Video />
+      <GetStarted />
+      <ProblemSolution />
+      <Testimonials />
+      <Ecosystem />
+      <Calculator />
+      {/* <Example /> */}
+      <TokenEbl />
+      <Projects />
+      <Team />
+      <AudioPlayer/>
     </main>
   );
 }

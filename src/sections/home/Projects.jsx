@@ -34,7 +34,7 @@ const Projects = () => {
             beatae ipsa quam praesentium. Similique maiores illo rerum quod.
             Unde corrupti totam quidem quas.
           </p>
-          <section className="flex flex-col md:flex-row gap-10 mx-auto">
+          <section className="flex flex-col lg:flex-row gap-10 mx-auto">
             {projects.map((project) => (
               <ProjectCard key={project.id} {...project} />
             ))}

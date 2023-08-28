@@ -25,9 +25,9 @@ const Navbar = () => {
       <motion.nav
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 2, duration: 0.5 }}
+        transition={{ delay: 1, duration: 0.5 }}
       >
-        <div className="flex justify-between items-center md:px-40 py-5 lg:flex-row md:flex-col">
+        <div className={`flex justify-between items-center lg:px-40 md:px-20 py-5 lg:flex-row`}>
           <div>
             <Link className="font-bold text-xl" href="/">
               <Image src={logo} alt="Ebloqs Logo" width={100} height={100} />
@@ -57,12 +57,12 @@ const Navbar = () => {
           </ul>
           <div
             onClick={handleClick}
-            className="md:hidden block absolute top-[30px] right-5"
+            className="lg:hidden block absolute top-1/3 right-5"
           >
             {active ? (
-              <AiOutlineClose className="text-2xl" />
+              <AiOutlineClose className="text-2xl md:text-4xl" />
             ) : (
-              <AiOutlineMenu className="text-2xl" />
+              <AiOutlineMenu className="text-2xl md:text-4xl"/>
             )}
           </div>
         </div>

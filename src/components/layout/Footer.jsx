@@ -13,11 +13,11 @@ import logo from "public/images/logo.png";
 const Footer = () => {
   return (
     <footer
-      className={`${styles.paddings} flex flex-col lg:flex-row justify-between gap-5 lg:gap-96 text-center lg:text-left bg-slate-900 text-white relative`}
+      className={`${styles.paddings} flex flex-col lg:flex-row justify-between gap-5 lg:gap-56 text-center lg:text-left bg-slate-900 text-white relative`}
     >
       <section className="flex flex-col justify-between">
         <div className="flex flex-col gap-3">
-          <div className="mx-auto md:mx-0">
+          <div className="mx-auto lg:mx-0">
             <Image src={logo} alt="" width={200} height={200}/>
           </div>
           <h4>La nueva forma de invertir</h4>
@@ -33,13 +33,13 @@ const Footer = () => {
         <section>
           <motion.section
             variants={fadeIn("up", "tween", 2.5, 1)}
-            className="flex flex-col lg:flex-row gap-10 mb-10"
+            className="flex flex-col md:justify-center md:flex-row gap-10 mt-7"
           >
             <DownloadBtn SO="android" outline={true} />
             <DownloadBtn SO="apple" outline={true} />
           </motion.section>
         </section>
-        <section className="flex flex-col gap-5 z-10">
+        <section className="flex flex-col md:mt-10 gap-5 z-10">
           <h4>Explora Ebloqs</h4>
           <div className="flex flex-col gap-5">
             <ul className="flex flex-col lg:flex-row gap-4">
@@ -50,7 +50,7 @@ const Footer = () => {
               ))}
             </ul>
             <h4>Nuestras redes</h4>
-            <ul className="flex justify-center md:justify-start gap-5">
+            <ul className="flex justify-center lg:justify-start gap-5">
               {social.map((link) => (
                 <li key={link.id}>
                   <Link className="text-2xl" href={link.link}>{link.icon}</Link>

@@ -17,26 +17,23 @@
   @keyframes circleAnimation {
     0% {
       top: -20rem;
-      left: 50%;
-      border-radius: 50%;
-      width: 100px;
+      left: 0%;
+      width: 0;
       height: 100px;
     }
     25% {
       top: -20rem;
-      border-radius: 50%;
+      width: 0;
     }
     50% {
       top: -20rem;
-      left: 50%;
-      border-radius: 50%;
+      left: 0%;
       width: 100px;
       height: 100px;
     }
     75% {
       top: 0rem;
-      left: 50%;
-      border-radius: 50%;
+      left: 0%;
       width: 100px;
       height: 100px;
     }
@@ -55,7 +52,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #060c21;
     animation-name: circleAnimation;
     animation-duration: 3s;
     animation-fill-mode: forwards;

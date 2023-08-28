@@ -29,9 +29,9 @@ const Ecosystem = () => {
       ref={scrollRef}
       id="ecosistema"
     >
-      <div className="flex flex-col md:flex-row gap-20">
+      <div className="flex flex-col lg:flex-row gap-20">
         <div className="flex-1 flex flex-col md:flex-row gap-12">
-          <div className="flex flex-col justify-center text-white gap-5">
+          <div className="flex flex-col justify-center text-white gap-5 z-10">
             <TypingText element="h4" title="| Haz parte del futuro" />
             <h2> Nuestro Ecosistema</h2>
             <p>
@@ -73,7 +73,7 @@ const Ecosystem = () => {
             </div>
           </div>
         </div>
-        <div className="hidden flex-[0.7] md:flex flex-col w-1/2 justify-center items-center relative">
+        <div className="hidden flex-[0.7] lg:flex flex-col w-1/2 justify-center items-center relative">
           <motion.div
             variants={fadeIn("up", "tween", 0.5, 1)}
             className="gradient-01"
@@ -92,7 +92,7 @@ const Ecosystem = () => {
             transition={{ duration: 1 }}
             viewport={{ once: false, amount: 0.9 }}
             style={{ y }}
-            className="absolute right-32 top-20 z-20"
+            className="absolute right-32 z-20"
           >
             <Image
               src={
@@ -154,7 +154,7 @@ const Ecosystem = () => {
             />
           </div>
         </div>
-        <section className="flex flex-col mt-10 md:hidden relative">
+        <section className="flex flex-col md:items-center mt-10 lg:hidden relative">
           <div className="flex flex-col z-10">
             <Image src={ecoImg} width={500} height={500} alt="" />
           </div>
@@ -162,7 +162,7 @@ const Ecosystem = () => {
             variants={fadeIn("up", "tween", 0.5, 1)}
             className="gradient-01"
           />
-          <div className="flex flex-col md:flex-row w-full gap-10 mt-10 z-10">
+          <div className="flex flex-col md:justify-center md:flex-row gap-10 md:mt-16 mt-7">
             <DownloadBtn
               SO="android"
               outline={false}
