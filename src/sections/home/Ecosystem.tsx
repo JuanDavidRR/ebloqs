@@ -32,42 +32,37 @@ const Ecosystem = () => {
       <div className="flex flex-col lg:flex-row gap-20">
         <div className="flex-1 flex flex-col md:flex-row gap-12">
           <div className="flex flex-col justify-center text-white gap-5 z-10">
-            <TypingText element="h4" title="| Haz parte del futuro" />
+            <TypingText element="h4" title="¿Qué está pasando?" />
             <h2> Nuestro Ecosistema</h2>
             <p>
-              La plataforma se encuentra en la red Polygon, que permite crear
-              aplicaciones seguras y fáciles de usar. Sobre todo con tarifas de
-              transacción bajas, es más usa el poder de Ethereum.
+              Ebloqs hace todo mas sencillo: accede a las redes más seguras y
+              fáciles de usar con las transacciones más bajas
             </p>
             <div className="flex-col md:flex-row items-center justify-center gap-12">
               <p>
-                Primero tiene componentes de arquitectura formada por el
-                consenso, mediante el cual todos los nodos de la red deben
-                llegar a un acuerdo. En segundo lugar, tiene estándar ERC-20 de
-                tokens fungibles que permite crear, transferir, consultar
-                balances y realizar todo tipo de operaciones, finalmente tiene
-                el ERC-721 de tokens no fungibles, igual que, poder crear NFTs,
-                que se asocian con un identificador irrepetible. No obstante, es
-                nativo para web3, DeFi y Metaverso.
+                ¿No tienes conocimiento del universo Crypto? ¡No hay problema!
+                Haz parte de proyectos en diferentes industrias como las bienes
+                raíces, hotelería y turismo, tecnología, automotriz, música,
+                arte y NFTs ¡Entre muchos más!
               </p>
               <ul className="flex mt-10 flex-col text-white gap-9">
                 <li className="flex items-center gap-5">
                   <div className="bg-white rounded-full p-2 border border-primary-purple">
                     <AiOutlineLineChart className="text-primary-purple text-2xl" />
                   </div>
-                  <p>Inversión en línea</p>
+                  <p>Sin intermediarios.</p>
                 </li>
                 <li className="flex items-center gap-5">
                   <div className="bg-white rounded-full p-2 border border-primary-purple">
                     <BsCoin className="text-primary-purple text-2xl" />
                   </div>
-                  <p>Datos del mercado Criptomonedas</p>
+                  <p>En cualquier parte del mundo.</p>
                 </li>
                 <li className="flex items-center gap-5">
                   <div className="bg-white rounded-full p-2 border border-primary-purple">
                     <BsWallet2 className="text-primary-purple text-2xl" />
                   </div>
-                  <p>Billetera propia</p>
+                  <p>Billetera propia.</p>
                 </li>
               </ul>
             </div>

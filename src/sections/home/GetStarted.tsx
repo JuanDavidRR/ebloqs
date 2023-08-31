@@ -1,10 +1,16 @@
 "use client";
 
-
 import styles from "@/styles";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
-import { useScroll, useTransform, motion, useMotionValue, useAnimation, useInView } from "framer-motion";
+import {
+  useScroll,
+  useTransform,
+  motion,
+  useMotionValue,
+  useAnimation,
+  useInView,
+} from "framer-motion";
 import backgroundImg from "public/images/fondo.png";
 import { fadeIn, staggerContainer } from "@/utils/animations/motion";
 import { startingFeatures } from "@/utils/constants/insights";
@@ -40,7 +46,6 @@ const GetStarted = () => {
     };
   }, []);
 
-
   return (
     <section className={`${styles.paddings} relative z-10`}>
       <motion.div
@@ -54,22 +59,22 @@ const GetStarted = () => {
           className={`flex-1 flex justify-center flex-col gap-10`}
         >
           <section className="flex flex-col gap-0">
-          <TypingText element="h4" title="| Haz parte del futuro" />
+            <TypingText element="h4" title="| Haz parte del futuro" />
 
             <FadeText heading="h2" textStyles="" delay={0} direction="right">
-              ¿Cómo rentalizar hasta{" "}
-              <span className="gradient-text font-bold">25% E/A</span> en
-              proyectos?
+              ¿Cómo hacer parte de{" "}
+              <span className="gradient-text font-bold">la nueva era</span> de
+              inversión?
             </FadeText>
           </section>
-          <div className="flex lg:w-3/4 flex-col justify-between gap-10">
+          <div className="flex flex-col justify-between gap-10">
             {startingFeatures.map((feature, index) => (
               <div
                 key={feature.id}
-                className={`${styles.flexCenter} flex gap-5`}
+                className={`flex justify-start items-center flex-1 gap-5`}
               >
                 <div
-                  className={`${styles.flexCenter} py-3 px-5 rounded-full bg-black-market`}
+                  className={`${styles.flexCenter} py-3 px-5 h-16 w-16 rounded-full bg-black-market`}
                 >
                   <p className="font-bold text-[20px] text-white">
                     {index + 1}

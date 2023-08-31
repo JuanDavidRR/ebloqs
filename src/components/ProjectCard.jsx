@@ -7,7 +7,7 @@ const ProjectCard = ({ title, description, image, investors, goal, animation }) 
   return (
     <motion.div
       variants={fadeIn("up", "tween", animation, 0.5)}
-      className="flex flex-col gap-5 text-center shadow-x bg-white text-black rounded-3xl hover:shadow-lg hover:shadow-primary-blue transit duration-300 md:odd:scale-[0.9]"
+      className="flex-1 flex flex-col gap-5 text-center shadow-x bg-white text-black rounded-3xl hover:shadow-lg hover:shadow-primary-blue transit duration-300 md:odd:scale-[0.9]"
     >
       <Image
         src={image}

@@ -56,7 +56,7 @@ const Video = () => {
         ref={scrollRef}
       >
         <TypingText element="h3" title="Ebloqs te explica" />
-        <h2>¿Qué es la tecnología Blockchain</h2>
+        <h2>¿Qué es la tecnología Blockchain?</h2>
         <motion.section
           style={{
             opacity,

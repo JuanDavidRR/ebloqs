@@ -37,13 +37,13 @@ const Hero = () => {
         <section className="flex-1 flex flex-col justify-center gap-5 relative">
           <TypingText element="h4" title="| Haz parte del futuro" />
           <motion.div
-            className="flex flex-col gap-3 z-10"
+            className="flex flex-col gap-3 z-0"
             variants={fadeIn("right", "tween", 1.5, 1)}
           >
             {/* <h1>Ebloqs.</h1> */}
-            <h2> La nueva forma de invertir cambió.</h2>
+            <h2> Invierte rápido, fácil y seguro.</h2>
             <h2 className="gradient-text">
-              Súmate a la revolución digital ahora.
+              Estamos aquí para cambiar el mundo paso a paso.
             </h2>
           </motion.div>
           <motion.p
@@ -94,7 +94,7 @@ const Hero = () => {
           >
             <Image
               src={"/images/blockchain3d.png"}
-              className="top-10 object-contain "
+              className="top-10 object-contain z-1"
               fill
               alt=""
             />
