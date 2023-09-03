@@ -105,7 +105,7 @@ const GetStarted = () => {
             className="object-contain z-10"
           />
           <motion.div
-            className="w-full h-full px-20 absolute top-[-100%] md:top-[-50%] lg:top-[-40%]"
+            className="w-full h-full px-20 absolute top-[-150%] md:top-[-90%] lg:top-[-70%]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}

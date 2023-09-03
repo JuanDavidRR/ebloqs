@@ -31,7 +31,7 @@ export default function Home() {
       <TokenEbl />
       <Projects />
       <Team />
-      {/* <AudioPlayer/> */}
+      <AudioPlayer/>
     </main>
   );
 }

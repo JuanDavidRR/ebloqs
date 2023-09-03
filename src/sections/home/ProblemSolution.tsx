@@ -1,14 +1,16 @@
 "use client";
 import { TypingText } from "@/components/CustomTexts";
-import InfoItemSolution from "@/components/InfoItemSolution";
 import styles from "@/styles";
 import backgroundImg from "public/images/fondo.png";
-import { useScroll, useTransform, motion, useMotionValue } from "framer-motion";
+import personOne from "public/images/people/1.png";
+import personTwo from "public/images/people/2.png";
+
+import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { AiOutlineAlert, AiOutlineBulb } from "react-icons/ai";
 import ecoImg from "public/images/1.png";
-import { fadeIn } from "@/utils/animations/motion";
+import { fadeIn, staggerContainer } from "@/utils/animations/motion";
 import blockchain from "public/images/fondo.png";
 import phone from "public/images/phoneExample.png";
 
@@ -33,11 +35,17 @@ const ProblemSolution = () => {
   });
 
   return (
-    <section
+    <motion.section
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
       className={`${styles.paddings} lg:pl-40 lg:pr-10 flex gap-5 md:gap-28 flex-col lg:flex-row lg:py-20`}
       ref={scrollRef}
     >
-      <div className="flex lg:w-1/2 flex-col gap-7">
+      <motion.div
+        variants={fadeIn("right", "tween", 0.5, 1)}
+        className="flex lg:w-1/2 flex-col gap-7"
+      >
         <TypingText element="h4" title="| ¿Qué está pasando?" />
         <h2>Problema & solución</h2>
         <div className="flex flex-col lg:flex-row gap-10">
@@ -83,7 +91,7 @@ const ProblemSolution = () => {
             </ul>
           </section>
         </div>
-      </div>
+      </motion.div>
       <div className={`hidden lg:${styles.flexCenter} md:w-1/2 relative`}>
         <motion.div
           style={{
@@ -111,15 +119,7 @@ const ProblemSolution = () => {
           viewport={{ once: false, amount: 0.9 }}
           className="absolute left-40 top-5"
         >
-          <Image
-            src={
-              "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
-            }
-            width={100}
-            height={20}
-            className="rounded-full border border-primary-purple"
-            alt="personPhone"
-          />
+          <Image src={personOne} width={150} height={20} alt="personPhone" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -129,15 +129,7 @@ const ProblemSolution = () => {
           style={{ y }}
           className="absolute right-32 top-52"
         >
-          <Image
-            src={
-              "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
-            }
-            width={100}
-            height={20}
-            className="rounded-full border border-primary-purple"
-            alt="personPhone"
-          />
+          <Image src={personTwo} width={150} height={20} alt="personPhone" />
         </motion.div>
       </div>
       <section className="flex flex-col mt-10 lg:hidden md:items-center relative">
@@ -150,7 +142,7 @@ const ProblemSolution = () => {
           alt=""
         />
       </section>
-    </section>
+    </motion.section>
   );
 };
 

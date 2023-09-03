@@ -1,8 +1,12 @@
 "use client";
+import { TypingText } from "@/components/CustomTexts";
+import styles from "@/styles";
 import React, { useState, useEffect } from "react";
 import { AiFillPauseCircle, AiFillPlayCircle } from "react-icons/ai";
-import {BiSolidSkipNextCircle, BiSolidSkipPreviousCircle} from 'react-icons/bi'
-
+import {
+  BiSolidSkipNextCircle,
+  BiSolidSkipPreviousCircle,
+} from "react-icons/bi";
 
 function AudioPlayer() {
   const audioFiles = [
@@ -57,22 +61,48 @@ function AudioPlayer() {
   ));
 
   return (
-    <div className="flex flex-col justify-center items-center gap-10">
-      <div className="flex gap-10">
-        <button id="prevBtn" onClick={prevTrack}>
-          <BiSolidSkipPreviousCircle className="text-4xl"/>
-        </button>
-        <button id="playBtn" onClick={playPause}>
-          {isPlaying ? <AiFillPauseCircle className="text-4xl"/> : <AiFillPlayCircle className="text-4xl"/>}
-        </button>
-        <button id="nextBtn" onClick={nextTrack}>
-          <BiSolidSkipNextCircle className="text-4xl"/>
-        </button>
-      </div>
-      <audio id="audioPlayer" controls>
-        Your browser does not support the audio element.
-      </audio>
-      <ul className="w-[300px]">{audioListItems}</ul>
+    <div className={`${styles.paddings} text-center`}>
+      <TypingText textStyles="text-center" element="h3" title="| Descubre algo nuevo" />
+      <h2 className="text-center">
+        Lo que{" "}
+        <span className="font-bold gradient-text">nuestros usuarios</span>{" "}
+        escuchan
+      </h2>
+      <section className="flex flex-col md:flex-row justify-center items-center md:items-start gap-10 mt-10">
+        <section className="flex flex-col items-center justify-center">
+          <h3 className="mb-10">Opción Spotify</h3>
+          <iframe
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DXaaU1AaHpZeu?utm_source=generator&theme=0"
+            width="100%"
+            height="400"
+            allowFullScreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </section>
+        <section >
+          <h3 className="mb-10">Opción Manual</h3>
+          <div className="flex gap-10 justify-center">
+            <button id="prevBtn" onClick={prevTrack}>
+              <BiSolidSkipPreviousCircle className="text-4xl" />
+            </button>
+            <button id="playBtn" onClick={playPause}>
+              {isPlaying ? (
+                <AiFillPauseCircle className="text-4xl" />
+              ) : (
+                <AiFillPlayCircle className="text-4xl" />
+              )}
+            </button>
+            <button id="nextBtn" onClick={nextTrack}>
+              <BiSolidSkipNextCircle className="text-4xl" />
+            </button>
+          </div>
+          <audio id="audioPlayer" controls>
+            Your browser does not support the audio element.
+          </audio>
+          <ul className="w-[300px]">{audioListItems}</ul>
+        </section>
+      </section>
     </div>
   );
 }

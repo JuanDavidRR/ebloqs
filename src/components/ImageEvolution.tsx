@@ -25,7 +25,7 @@ const ImageEvolution = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dinero/1.png" width={1200} height={1000} alt='center'/>
+          <Image src="/images/dinero/1.png" width={2000} height={2000} alt='center'/>
         </motion.div>
         <motion.div
           variants={{
@@ -45,7 +45,7 @@ const ImageEvolution = () => {
           className='absolute'
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dinero/5.png" width={1200} height={1000} alt='center'/>
+          <Image src="/images/dinero/5.png" width={2000} height={2000} alt='center'/>
         </motion.div>
         <motion.div
           variants={{
@@ -67,7 +67,7 @@ const ImageEvolution = () => {
           className='absolute'
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dinero/6.png" width={1200} height={1000} alt='center'/>
+          <Image src="/images/dinero/6.png" width={2000} height={2000} alt='center'/>
         </motion.div>
       </div>
       {/* mobile */}
@@ -90,7 +90,7 @@ const ImageEvolution = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dineroMobile/2.png" width={300} height={300} alt='center'/>
+          <Image src="/images/dineroMobile/2.png" width={500} height={500} alt='center'/>
         </motion.div>
         <motion.div
           variants={{
@@ -110,7 +110,7 @@ const ImageEvolution = () => {
           className='absolute'
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dineroMobile/4.png" width={300} height={300} alt='center'/>
+          <Image src="/images/dineroMobile/4.png" width={500} height={500} alt='center'/>
         </motion.div>
         <motion.div
           variants={{
@@ -132,7 +132,7 @@ const ImageEvolution = () => {
           className='absolute'
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dineroMobile/5.png" width={300} height={300} alt='center'/>
+          <Image src="/images/dineroMobile/5.png" width={500} height={500} alt='center'/>
         </motion.div>
       </div>
     </div>

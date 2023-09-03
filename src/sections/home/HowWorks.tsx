@@ -6,6 +6,7 @@ import React from 'react';
 import { motion} from "framer-motion";
 import { staggerContainer } from '@/utils/animations/motion';
 import ImageEvolution from '@/components/ImageEvolution';
+import styles from "@/styles";
 
 const HowWorks = () => {
 
@@ -15,7 +16,7 @@ const HowWorks = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`mx-auto flex flex-col gap-8 py-20`}
+      className={`${styles.paddings} mx-auto flex flex-col gap-8 py-20`}
     >
       <div className={`flex flex-col gap-6 text-center`}>
         <TypingText element="h3" title="Cómo funciona el dinero" />
