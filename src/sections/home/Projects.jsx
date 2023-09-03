@@ -1,7 +1,7 @@
 "use client";
 
 import Button from "@/components/Button";
-import { TypingText } from "@/components/CustomTexts";
+import { FadeText, TypingText } from "@/components/CustomTexts";
 import ProjectCard from "@/components/ProjectCard";
 import styles from "@/styles";
 import { fadeIn, staggerContainer } from "@/utils/animations/motion";
@@ -26,12 +26,14 @@ const Projects = () => {
           className="hidden md:gradient-01 z-0"
         />
         <section className="flex-1 flex flex-col gap-10 relative">
-          <TypingText element="h4" title="Haz parte del futuro" />
-          <h2>Nuestros proyectos</h2>
-          <p>
+          <TypingText element="h4" title="Nuestros proyectos" />
+          <FadeText heading="h2" textStyles="" delay={0} direction="right">
+            Nuestros proyectos
+          </FadeText>
+          <FadeText heading="p" textStyles="" delay={0} direction="right">
             Escoge tu sector e industria preferida: accede a proyectos novedosos
             impulsados por tecnología Blockchain:
-          </p>
+          </FadeText>
           <section className="flex flex-col lg:flex-row gap-10 mx-auto">
             {projects.map((project) => (
               <ProjectCard key={project.id} {...project} />

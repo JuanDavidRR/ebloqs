@@ -13,12 +13,12 @@ import { fadeIn, staggerContainer } from "@/utils/animations/motion";
 const Testimonials = () => {
   return (
     <motion.section
-    id="testimonios"
+      id="testimonios"
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`px-5 py-20 lg:px-40 lg:pb-32 md:px-20'flex flex-col items-center gap-5 md:gap-16 md:flex-row p-5 z-10 relative`}
+      className={`px-5 py-20 lg:px-40 lg:pt-20 lg:pb-0 md:px-20'flex flex-col items-center gap-5 md:gap-16 md:flex-row p-5 z-10 relative`}
     >
 
       <section className="flex-1">

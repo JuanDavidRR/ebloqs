@@ -58,8 +58,8 @@ const GetStarted = () => {
           variants={fadeIn("right", "tween", 0.2, 1)}
           className={`flex-1 flex justify-center flex-col gap-10`}
         >
-          <section className="flex flex-col gap-0">
-            <TypingText element="h4" title="| Haz parte del futuro" />
+          <section className="flex flex-col w-full">
+            <TypingText element="h3" title="| Un mundo de posiblidades" />
 
             <FadeText heading="h2" textStyles="" delay={0} direction="right">
               ¿Cómo hacer parte de{" "}

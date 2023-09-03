@@ -28,7 +28,7 @@ const ProblemSolution = () => {
     clamp: true,
   });
 
-  const y = useTransform(scrollYProgress, [0, 0.1], ["1%", "100%"], {
+  const y = useTransform(scrollYProgress, [0, 3], ["1%", "100%"], {
     clamp: true,
   });
 
@@ -38,7 +38,7 @@ const ProblemSolution = () => {
       ref={scrollRef}
     >
       <div className="flex lg:w-1/2 flex-col gap-7">
-        <TypingText element="h4" title="| Un mundo de posibilidades" />
+        <TypingText element="h4" title="| ¿Qué está pasando?" />
         <h2>Problema & solución</h2>
         <div className="flex flex-col lg:flex-row gap-10">
           <section className="flex-1">

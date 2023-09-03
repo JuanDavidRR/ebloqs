@@ -77,29 +77,29 @@ const Hero = () => {
             variants={fadeIn("up", "tween", 0.5, 1)}
             className="hero-gradient z-0"
           />
-          <Image
-            src={"/images/1.png"}
-            className=" z-10"
-            height={800}
-            width={800}
-            alt=""
-          />
-
-          <motion.div
-            className="w-full h-full px-20 absolute"
-            style={{
-              rotate: scrollY * 0.3,
-              transition: "transform 0.3s ease-out",
-            }}
-          >
             <Image
-              src={"/images/blockchain3d.png"}
-              className="top-10 object-contain z-1"
-              fill
+              src={"/images/1.png"}
+              className=" z-10"
+              height={800}
+              width={800}
               alt=""
             />
-          </motion.div>
-        </motion.section>
+
+            <motion.div
+              className="w-full h-full px-20 absolute"
+              style={{
+                rotate: scrollY * 0.3,
+                transition: "transform 0.3s ease-out",
+              }}
+            >
+              <Image
+                src={"/images/blockchain3d.png"}
+                className="top-10 object-contain z-1"
+                fill
+                alt=""
+              />
+            </motion.div>
+          </motion.section>
       </section>
     </motion.section>
   );

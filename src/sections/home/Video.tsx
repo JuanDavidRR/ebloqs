@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
-import { TypingText } from "@/components/CustomTexts";
+import { FadeText, TypingText } from "@/components/CustomTexts";
 import styles from "@/styles";
 import React, {  useEffect, useRef } from "react";
 import { motion, useAnimation, useInView, useScroll, useTransform } from "framer-motion";
@@ -56,7 +56,9 @@ const Video = () => {
         ref={scrollRef}
       >
         <TypingText element="h3" title="Ebloqs te explica" />
-        <h2>¿Qué es la tecnología Blockchain?</h2>
+        <FadeText heading="h2" textStyles="" delay={0} direction="right">
+          ¿Qué es la tecnología Blockchain?
+        </FadeText>
         <motion.section
           style={{
             opacity,
@@ -67,20 +69,32 @@ const Video = () => {
             }}
           className={`${styles.flexCenter} hidden md:flex w-full mx-auto mt-7 border-transparent rounded-lg`}
         >
-          <div className=" p-2 md:p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg">
-            <video autoPlay muted loop className="w-full h-full" controls>
+          <div className=" p-2 md:p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg w-full h-[80vh]">
+            {/* <video autoPlay muted loop className="w-full h-full" controls>
               <source src={"/videos/mainVideo.mp4"} type="video/mp4"/>
-            </video>
+            </video> */}
+            <iframe
+              className="w-full h-full"
+              src={`https://www.youtube.com/embed/Wc5x-Xf9RbI?autoplay=1&mute=1`}
+              allowFullScreen
+              allow="autoplay"
+            ></iframe>
           </div>
          
         </motion.section>
       </div>
 
-      <div className="md:hidden mt-5 flex p-2 md:p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg">
-            <video autoPlay muted loop className="w-full h-full" controls>
-              <source src={"/videos/mainVideo.mp4"} type="video/mp4"/>
-            </video>
-          </div>
+      <div className="md:hidden mt-5 flex p-2 md:p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg h-[30vh]">
+        {/* <video autoPlay muted loop className="w-full h-full" controls>
+          <source src={"/videos/mainVideo.mp4"} type="video/mp4"/>
+        </video> */}
+        <iframe
+          className="w-full h-full"
+          src={`https://www.youtube.com/embed/Wc5x-Xf9RbI?autoplay=1&mute=1`}
+          allowFullScreen
+          allow="autoplay"
+        ></iframe>
+      </div>
       {/* Background section */}
       {/* <div>
         <motion.div

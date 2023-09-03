@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
-import { TypingText } from "@/components/CustomTexts";
+import { FadeText, TypingText } from "@/components/CustomTexts";
 import TeamCard from "@/components/TeamCard";
 import styles from "@/styles";
 import { fadeIn, staggerContainer } from "@/utils/animations/motion";
@@ -60,15 +60,16 @@ const Team = () => {
       className={`${styles.paddings} bg-slate-200 `}
       // ref={scrollRef}
     >
-      <TypingText
-        textStyles="text-center"
-        element="h4"
-        title="| Haz parte del futuro"
-      />
-      <h2 className="text-center">
-        Conoce <span className="gradient-text font-bold">nuestro equipo</span>{" "}
-        de trabajo
-      </h2>
+      <section className="flex flex-col gap-6 text-center">
+        <TypingText
+          element="h4"
+          title="| Haz parte del futuro"
+        />
+      <FadeText heading="h2" textStyles="" delay={0} direction="right">
+          Conoce <span className="gradient-text font-bold">nuestro equipo</span>{" "}
+          de trabajo
+        </FadeText>
+      </section>
       <section className="hidden gap-20 my-10">
         {team.map((teamMember, index) => (
           <motion.div
