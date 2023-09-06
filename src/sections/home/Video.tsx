@@ -2,8 +2,14 @@
 "use client";
 import { FadeText, TypingText } from "@/components/CustomTexts";
 import styles from "@/styles";
-import React, {  useEffect, useRef } from "react";
-import { motion, useAnimation, useInView, useScroll, useTransform } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import {
+  motion,
+  useAnimation,
+  useInView,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 
 const Video = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -12,7 +18,11 @@ const Video = () => {
     offset: ["start end", "end start"],
   });
 
-  const opacity = useTransform(scrollYProgress, [0, 0.65, 1], [1, 1, 0]);
+  const opacity = useTransform(
+    scrollYProgress,
+    [0, 0.6, 0.9, 2],
+    ["50%", "100%", "100%", "50%"]
+  );
 
   const height = useTransform(
     scrollYProgress,
@@ -38,7 +48,7 @@ const Video = () => {
   //   ["white", "black"]
   // )
 
-  const y = useTransform(scrollYProgress, [0.1, 0.8], ["0%", "-100%",]);
+  const y = useTransform(scrollYProgress, [0.1, 0.8], ["0%", "-100%"]);
   const yInverse = useTransform(scrollYProgress, [0.1, 0.8], ["0%", "100%"]);
 
   return (
@@ -48,11 +58,11 @@ const Video = () => {
       // }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.30 }}
+      viewport={{ once: false, amount: 0.3 }}
       className={`${styles.paddings} relative bg-black-market text-white`}
     >
       <div
-        className={`lg:pb-32 flex-col gap-5 text-center mx-auto relative`}
+        className={`flex-col gap-5 text-center mx-auto relative`}
         ref={scrollRef}
       >
         <TypingText element="h3" title="Ebloqs te explica" />
@@ -63,10 +73,10 @@ const Video = () => {
           style={{
             opacity,
             height,
-            // width,
+            width,
             // backgroundImage: "",
-            borderWidth
-            }}
+            borderWidth,
+          }}
           className={`${styles.flexCenter} hidden md:flex w-full mx-auto mt-7 border-transparent rounded-lg`}
         >
           <div className=" p-2 md:p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg w-full h-[80vh]">
@@ -80,7 +90,6 @@ const Video = () => {
               allow="autoplay"
             ></iframe>
           </div>
-         
         </motion.section>
       </div>
 
@@ -133,6 +142,5 @@ const Video = () => {
     </motion.section>
   );
 };
-
 
 export default Video;

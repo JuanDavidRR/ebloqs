@@ -103,6 +103,11 @@ h4 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  backface-visibility: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 }
 
 .background-gradient {
@@ -134,15 +139,18 @@ h4 {
   position: absolute;
   right: 5%;
   top: 5%;
+  backface-visibility: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  will-change: transform;
 }
 
 .hero-gradient {
   /* -webkit-backdrop-filter: blur(320px);
   backdrop-filter: blur(320px); */
-  background: linear-gradient(
-    var(--secondary) 35%,
-    var(--primary-blue) 100%
-  );
+  background: linear-gradient(var(--secondary) 35%, var(--primary-blue) 100%);
   -webkit-filter: blur(320px);
   filter: blur(320px);
   height: 100vh;
@@ -150,10 +158,16 @@ h4 {
   position: absolute;
   right: -250px;
   top: -250px;
+  backface-visibility: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  will-change: transform;
 }
 
 @supports (-webkit-backdrop-filter: blur(1px)) {
-  @media not all and (min-resolution:.001dpcm) {
+  @media not all and (min-resolution: 0.001dpcm) {
     /* Estilos específicos de -webkit-backdrop-filter y backdrop-filter */
     .hero-gradient {
       -webkit-backdrop-filter: blur(1px);
@@ -207,6 +221,12 @@ h4 {
     #c547ff 100%
   );
   z-index: 0;
+  backface-visibility: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  will-change: transform;
 }
 
 .button {

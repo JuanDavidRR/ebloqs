@@ -26,7 +26,7 @@ const Projects = () => {
           className="hidden md:gradient-01 z-0"
         />
         <section className="flex-1 flex flex-col gap-10 relative">
-          <TypingText element="h4" title="Nuestros proyectos" />
+          <TypingText element="h4" title="Descubre el futuro" />
           <FadeText heading="h2" textStyles="" delay={0} direction="right">
             Nuestros proyectos
           </FadeText>

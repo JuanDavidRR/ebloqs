@@ -10,7 +10,7 @@ const styles = {
 
     innerWidth: 'w-[80%] mx-auto',
 
-    paddings: 'px-5 py-28 lg:px-40 lg:py-32 md:px-20',
+    paddings: 'px-5 pt-20 pb-10 lg:px-40 lg:pt-24 md:pt-20 md:pb-10 lg:pb-10 md:px-20',
     yPaddings: 'sm:py-16 xs:py-8 py-12',
     xPaddings: 'sm:px-16 px-6',
     topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
