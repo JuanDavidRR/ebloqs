@@ -27,7 +27,9 @@ const Navbar = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.5 }}
       >
-        <div className={`flex justify-between items-center lg:px-40 md:px-20 py-3 lg:flex-row`}>
+        <div
+          className={`flex justify-between items-center lg:px-40 md:px-20 py-3 lg:flex-row`}
+        >
           <div>
             <Link className="font-bold text-xl" href="/">
               <Image src={logo} alt="Ebloqs Logo" width={100} height={100} />
@@ -48,8 +50,10 @@ const Navbar = () => {
               );
             })}
             <li>
-              <Link className="" href="/">
-                <div className={`px-5 py-1 border-2 border-primary-blue transition duration-400 snap-x snap-proximity snap-center shadow-sm shadow-primary-blue hover:transform hover:scale-105 hover:shadow-md hover:shadow-primary-blue`}>
+              <Link className="" onClick={handleClick} href="/">
+                <div
+                  className={`px-5 py-1 border-2 border-primary-blue transition duration-400 snap-x snap-proximity snap-center shadow-sm shadow-primary-blue hover:transform hover:scale-105 hover:shadow-md hover:shadow-primary-blue`}
+                >
                   Descargar
                 </div>
               </Link>
@@ -62,7 +66,7 @@ const Navbar = () => {
             {active ? (
               <AiOutlineClose className="text-2xl md:text-4xl" />
             ) : (
-              <AiOutlineMenu className="text-2xl md:text-4xl"/>
+              <AiOutlineMenu className="text-2xl md:text-4xl" />
             )}
           </div>
         </div>
