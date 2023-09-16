@@ -9,10 +9,10 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { AiOutlineAlert, AiOutlineBulb } from "react-icons/ai";
-import ecoImg from "public/images/1.png";
+import ecoImg from "public/images/mockup/3.png";
 import { fadeIn, staggerContainer } from "@/utils/animations/motion";
 import blockchain from "public/images/fondo.png";
-import phone from "public/images/phoneExample.png";
+import phone from "public/images/mockup/5.png";
 
 const ProblemSolution = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -36,6 +36,7 @@ const ProblemSolution = () => {
 
   return (
     <motion.section
+      variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
@@ -102,11 +103,14 @@ const ProblemSolution = () => {
         >
           <Image src={blockchain} width={600} height={600} alt="cubo" />
         </motion.div>
-        <motion.div className="absolute">
+        <motion.div
+          variants={fadeIn("up", "tween", 0.5, 1)}
+          className="absolute w-1/2"
+        >
           <Image
             src={phone}
-            width={400}
-            height={400}
+            width={1000}
+            height={1000}
             alt="phone"
             className="rotate-[5deg]"
           />

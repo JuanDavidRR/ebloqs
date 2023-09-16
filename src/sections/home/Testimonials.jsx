@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { testimonials } from "@/utils/constants/testimonials";
 import Image from "next/image";
 import React from "react";
-import img from "public/images/9.png";
 import { fadeIn, staggerContainer } from "@/utils/animations/motion";
 
 const Testimonials = () => {

@@ -24,7 +24,7 @@ export default function Home() {
       <Video />
       <GetStarted />
       <ProblemSolution />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Ecosystem />
       <Calculator />
       {/* <Example /> */}

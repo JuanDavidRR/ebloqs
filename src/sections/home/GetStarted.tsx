@@ -16,7 +16,7 @@ import { fadeIn, staggerContainer } from "@/utils/animations/motion";
 import { startingFeatures } from "@/utils/constants/insights";
 import { FadeText, TypingText } from "@/components/CustomTexts";
 
-import startImg from "public/images/1.png";
+import startImg from "public/images/mockup/2.png";
 import Button from "@/components/Button";
 
 const GetStarted = () => {
@@ -100,19 +100,17 @@ const GetStarted = () => {
           <Image
             src={startImg}
             alt="get-started"
-            width={600}
-            height={600}
-            className="object-contain z-10"
+            className="object-contain z-10 lg:w-2/3"
           />
           <motion.div
-            className="w-full h-full px-20 absolute top-[-150%] md:top-[-90%] lg:top-[-70%]"
+            className="w-full h-full px-20 absolute top-[-110%] md:top-[-90%] lg:top-[-60%]"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
             style={{
               y: scrollY * 0.15,
               transition: "transform 0.3s ease-out",
-              width: "550px",
+              width: "100%",
             }}
           >
             <Image

@@ -28,10 +28,4 @@ export const benlist = [
     description: "Del mismo modo acceso exclusivo a eventos, además de formación con Partnerships.",
     icon: <BsFillPeopleFill/>
   },
-  {
-    id: 4,
-    title: 'Hospedaje',
-    description: "Beneficios como hospedaje en los departamentos que estén en modalidad renta de corto tiempo en todo los países.",
-    icon: <BsFillBuildingFill/>
-  }
 ]

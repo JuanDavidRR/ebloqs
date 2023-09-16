@@ -35,7 +35,7 @@ const Hero = () => {
         className={`flex flex-col justify-center items-center lg:flex-row gap-10 relative`}
       >
         <section className="flex-1 flex flex-col justify-center gap-5 relative">
-          <TypingText element="h4" title="| Haz parte del futuro" />
+          <TypingText element="h4" title="| Forma parte del futuro" />
           <motion.div
             className="flex flex-col gap-3 z-0"
             variants={fadeIn("right", "tween", 1.5, 1)}
@@ -50,8 +50,9 @@ const Hero = () => {
             className="text-xl"
             variants={fadeIn("right", "tween", 1.5, 1)}
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-            mollitia tempora magni expedita dolorum.
+            Ebloqs brinda acceso a las personas con pequeños capitales a
+            proyectos que antes eran restrictivos e inalcanzables por requerir
+            grandes inversiones. INVERSIÓN SIN FRICCIÓN Y AL ALCANCE DE TODOS
           </motion.p>
           <motion.section
             variants={fadeIn("up", "tween", 2.5, 1)}
@@ -77,29 +78,29 @@ const Hero = () => {
             variants={fadeIn("up", "tween", 0.5, 1)}
             className="hero-gradient z-0"
           />
+          <Image
+            src={"/images/mockup/1.png"}
+            className=" z-10"
+            height={450}
+            width={450}
+            alt=""
+          />
+
+          <motion.div
+            className="w-full h-full px-20 absolute"
+            style={{
+              rotate: scrollY * 0.3,
+              transition: "transform 0.3s ease-out",
+            }}
+          >
             <Image
-              src={"/images/1.png"}
-              className=" z-10"
-              height={800}
-              width={800}
+              src={"/images/blockchain3d.png"}
+              className="top-10 object-contain z-1"
+              fill
               alt=""
             />
-
-            <motion.div
-              className="w-full h-full px-20 absolute"
-              style={{
-                rotate: scrollY * 0.3,
-                transition: "transform 0.3s ease-out",
-              }}
-            >
-              <Image
-                src={"/images/blockchain3d.png"}
-                className="top-10 object-contain z-1"
-                fill
-                alt=""
-              />
-            </motion.div>
-          </motion.section>
+          </motion.div>
+        </motion.section>
       </section>
     </motion.section>
   );

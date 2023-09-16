@@ -11,6 +11,7 @@ import { social } from "@/utils/constants/social";
 import DownloadBtn from "@/components/DownloadBtn";
 import { fadeIn } from "@/utils/animations/motion";
 import { FadeText, TypingText } from "@/components/CustomTexts";
+import Image from "next/image";
 
 const TokenEbl = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -38,13 +39,24 @@ const TokenEbl = () => {
       >
         <div className={`${styles.flexCenter} flex-col gap-6`}>
           <TypingText element="h3" title="| Haz parte del futuro" />
-          <FadeText heading="h2" textStyles="" delay={0} direction="right">
+          <FadeText
+            heading="h2"
+            textStyles="flex items-center gap-5"
+            delay={0}
+            direction="right"
+          >
             Token EBL
+            <Image
+              src="/images/coin.png"
+              alt="token ebl coin"
+              width={100}
+              height={100}
+            />
           </FadeText>
           <FadeText heading="p" textStyles="" delay={0} direction="right">
             A partir del lanzamiento de la ICO con la plataforma operativa, esto
-            generará alta rentabilidad al EBL que es el combustible del ecosistema
-            ebloqs®.
+            generará alta rentabilidad al EBL que es el combustible del
+            ecosistema ebloqs®.
           </FadeText>
         </div>
         <section className="hidden">

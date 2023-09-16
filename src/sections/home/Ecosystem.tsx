@@ -8,7 +8,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import { AiOutlineBulb, AiOutlineLineChart } from "react-icons/ai";
 import { BsCoin, BsWallet2 } from "react-icons/bs";
-import ecoImg from "public/images/1.png";
+import ecoImg from "public/images/mockup/4.png";
 import { fadeIn } from "@/utils/animations/motion";
 import { FadeText, TypingText } from "@/components/CustomTexts";
 
@@ -25,7 +25,7 @@ const Ecosystem = () => {
   });
   return (
     <section
-      className={`flex flex-col bg-black-market ${styles.paddings} gap-14 relative -mt-16`}
+      className={`flex flex-col bg-black-market ${styles.paddings} gap-14 relative`}
       ref={scrollRef}
       id="ecosistema"
     >
@@ -38,7 +38,11 @@ const Ecosystem = () => {
         <div className="flex flex-col lg:flex-row gap-20">
           <div className="flex-1 flex flex-col md:flex-row gap-12">
             <div className="flex flex-col justify-center text-white gap-5 z-10">
-              <TypingText element="h3" title="¿No conoces el poder de Blockchain?" textStyles="text-lg sm:text-2xl flex flex-wrap"/>
+              <TypingText
+                element="h3"
+                title="¿Conoces el poder de Blockchain?"
+                textStyles="text-lg sm:text-2xl flex flex-wrap"
+              />
               <FadeText heading="h2" textStyles="" delay={0} direction="right">
                 Nuestro Ecosistema
               </FadeText>
@@ -47,61 +51,45 @@ const Ecosystem = () => {
                 className="flex flex-col gap-10"
               >
                 <p>
-                  Ebloqs hace todo mas sencillo: accede a las redes más seguras y
-                  fáciles de usar con las transacciones más bajas.
+                  Ebloqs hace todo mas sencillo: accede a las redes más seguras
+                  y fáciles de usar con el costo más bajo de transacción.
                 </p>
                 <p>
-                  ¿No tienes conocimiento del universo Crypto? ¡No hay problema!
-                  Haz parte de proyectos en diferentes industrias como las bienes
-                  raíces, hotelería y turismo, tecnología, automotriz, música,
-                  arte y NFTs ¡Entre muchos más!.
+                  ¿Tienes conocimiento del universo Crypto? ¡No hay problema!
+                  Haz parte de proyectos en diferentes industrias como las
+                  bienes raíces, hotelería y turismo, tecnología, automotriz,
+                  música, arte y NFTs ¡Entre muchos más!.
                 </p>
               </motion.section>
+
+              <Image src="/images/esquema/1.png" className="hidden lg:block" alt="esquema ebloqs" width={1500} height={1500}/>
+              <Image src="/images/esquemaMobile/1.png" className="lg:hidden" alt="esquema ebloqs" width={1500} height={1500}/>
               
-              <div className="flex-col md:flex-row items-center justify-center gap-12">
-                <ul className="flex mt-10 flex-col text-white gap-9">
-                  <motion.li
-                    variants={fadeIn("right", "tween", 1, 1)}
-                    className="flex items-center gap-5"
-                  >
-                    <div className="bg-white rounded-full p-2 border border-primary-purple">
-                      <AiOutlineLineChart className="text-primary-purple text-2xl" />
-                    </div>
-                    <p>Sin intermediarios.</p>
-                  </motion.li>
-                  <motion.li
-                    variants={fadeIn("right", "tween", 1.5, 1)}
-                    className="flex items-center gap-5"
-                  >
-                    <div className="bg-white rounded-full p-2 border border-primary-purple">
-                      <BsCoin className="text-primary-purple text-2xl" />
-                    </div>
-                    <p>En cualquier parte del mundo.</p>
-                  </motion.li>
-                  <motion.li
-                    variants={fadeIn("right", "tween", 2, 1)}
-                    className="flex items-center gap-5"
-                  >
-                    <div className="bg-white rounded-full p-2 border border-primary-purple">
-                      <BsWallet2 className="text-primary-purple text-2xl" />
-                    </div>
-                    <p>Billetera propia.</p>
-                  </motion.li>
-                </ul>
-              </div>
             </div>
           </div>
           <div className="hidden flex-[0.7] lg:flex flex-col w-1/2 justify-center items-center relative">
+            <div className="flex items-center gap-10 mb-10 z-10">
+              <DownloadBtn
+                SO="android"
+                outline={false}
+                className="levitating-object w-full"
+              />
+              <DownloadBtn
+                SO="apple"
+                outline={false}
+                className="levitating-object w-full"
+              />
+            </div>
             <motion.div
               variants={fadeIn("up", "tween", 0.5, 1)}
               className="gradient-01"
             />
             <Image
-              src="/images/phoneExample.png"
+              src="/images/mockup/6.png"
               alt="phone"
-              width={350}
-              height={350}
-              className="z-20"
+              width={400}
+              height={400}
+              className="z-20 w-1/2"
             />
 
             <motion.div
@@ -135,8 +123,8 @@ const Ecosystem = () => {
             >
               <Image
                 src={"/images/line.png"}
-                width={200}
-                height={200}
+                width={250}
+                height={250}
                 className="brightness-200"
                 alt="line"
               />
@@ -162,18 +150,6 @@ const Ecosystem = () => {
               <p className="text-white text-base font-bold">Juan Diego</p>
               <p className="text-[#828bac] text-sm">Desarrollador</p>
             </motion.div>
-            <div className="flex items-center gap-10">
-              <DownloadBtn
-                SO="android"
-                outline={false}
-                className="levitating-object w-full"
-              />
-              <DownloadBtn
-                SO="apple"
-                outline={false}
-                className="levitating-object w-full"
-              />
-            </div>
           </div>
           <section className="flex flex-col md:items-center mt-10 lg:hidden relative">
             <div className="flex flex-col z-10">
