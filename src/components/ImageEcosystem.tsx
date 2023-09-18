@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import Image from 'next/image';
 
-const ImageEvolution = () => {
+const ImageEcosystem = () => {
   return (
     <div>
       {/* descktop */}
@@ -10,11 +10,11 @@ const ImageEvolution = () => {
         <motion.div
           variants={{
             hidden: {
-              scale: 1.5, 
+              x: -100,
               opacity: 0
             },
             show: {
-              scale: 1, 
+              x: 0, 
               opacity: 1,
               transition: {
                 duration: 0.5,
@@ -25,15 +25,17 @@ const ImageEvolution = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dinero/1.png" width={2000} height={2000} alt='center'/>
+          <Image src="/images/esquema/3.png" width={1500} height={1500} alt='center'/>
         </motion.div>
         <motion.div
           variants={{
             hidden: {
-              scale: 0,
+              x: 100,
+              opacity: 0
             },
             show: {
-              scale: 1,
+              x: 0,
+              opacity: 1,
               transition: {
                 duration: 0.5,
                 delay: 0.5
@@ -45,7 +47,7 @@ const ImageEvolution = () => {
           className='absolute'
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dinero/4.png" width={2000} height={2000} alt='center'/>
+          <Image src="/images/esquema/2.png" width={1500} height={1500} alt='center'/>
         </motion.div>
      
       </div>
@@ -69,7 +71,7 @@ const ImageEvolution = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dineroMobile/2.png" width={500} height={500} alt='center'/>
+          <Image src="/images/esquemaMobile/3.png" width={1500} height={1500} alt='center'/>
         </motion.div>
         <motion.div
           variants={{
@@ -89,7 +91,7 @@ const ImageEvolution = () => {
           className='absolute'
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dineroMobile/4.png" width={500} height={500} alt='center'/>
+          <Image src="/images/esquemaMobile/2.png" width={1500} height={1500} alt='center'/>
         </motion.div>
         {/* <motion.div
           variants={{
@@ -111,11 +113,11 @@ const ImageEvolution = () => {
           className='absolute'
           viewport={{ once: false, amount: 0.25 }}
         >
-          <Image src="/images/dineroMobile/3.png" width={500} height={500} alt='center'/>
+          <Image src="/images/dineroMobile/4.png" width={500} height={500} alt='center'/>
         </motion.div> */}
       </div>
     </div>
   )
 }
 
-export default ImageEvolution;
+export default ImageEcosystem;

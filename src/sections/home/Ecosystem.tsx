@@ -11,6 +11,7 @@ import { BsCoin, BsWallet2 } from "react-icons/bs";
 import ecoImg from "public/images/mockup/4.png";
 import { fadeIn } from "@/utils/animations/motion";
 import { FadeText, TypingText } from "@/components/CustomTexts";
+import ImageEcosystem from "@/components/ImageEcosystem";
 
 const Ecosystem = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -62,8 +63,8 @@ const Ecosystem = () => {
                 </p>
               </motion.section>
 
-              <Image src="/images/esquema/1.png" className="hidden lg:block" alt="esquema ebloqs" width={1500} height={1500}/>
-              <Image src="/images/esquemaMobile/1.png" className="lg:hidden" alt="esquema ebloqs" width={1500} height={1500}/>
+               {/* <Image src="/images/esquema/1.png" className="hidden lg:block" alt="esquema ebloqs" width={1500} height={1500}/> */}
+               <ImageEcosystem/>
               
             </div>
           </div>
