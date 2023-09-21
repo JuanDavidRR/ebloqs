@@ -1,17 +1,10 @@
+import { FaServer, FaCoins, FaChartLine } from 'react-icons/fa';
+import { BiAbacus, BiSolidDoughnutChart } from "react-icons/bi";
+
 export const tabs = [
-    { icon: "🪙", label: "$50 ", description: "Rentabilidad al 15% E/A" },
-    { icon: "🪙", label: "$150 ", description: "Rentabilidad al 18% E/A" },
-    { icon: "🪙", label: "$300 ", description: "Rentabilidad al 21% E/A" },
-    { icon: "🪙", label: "$500 ", description: "Rentabilidad al 22% E/A" },
-    { icon: "🪙", label: "$850 ", description: "Rentabilidad al 24% E/A" },
-    { icon: "🪙", label: "$1.5k ", description: "Rentabilidad al 28% E/A" },
-    { icon: "🪙", label: "$3k ", description: "Rentabilidad al 33% E/A" },
-    { icon: "🪙", label: "$5k ", description: "Rentabilidad al 44% E/A" },
-    { icon: "🪙", label: "$7.5k ", description: "Rentabilidad al 55% E/A" },
-    { icon: "🪙", label: "$10k ", description: "Rentabilidad al 66% E/A" },
-    { icon: "🪙", label: "$15k ", description: "Rentabilidad al 77% E/A" },
-    { icon: "🪙", label: "$35k ", description: "Rentabilidad al 77% E/A" },
-    { icon: "🪙", label: "$50k ", description: "Rentabilidad al 77% E/A" },
-
-
-  ];
+  { id: 0, iconTitle: <FaServer />, title: "Plataforma", period: "Q3 - 22", subtitle: 'Desarrollo', description: "Plataforma 100% operativa para lanzamiento ICO.", value: 0 },
+  { id: 1, iconTitle: <FaCoins />, title: "ICO", period: "Q4 - 22", subtitle: 'Lanzamiento', description: "Ronda privada y pre venta.", value: 1},
+  { id: 2, iconTitle: <BiAbacus />, title: "Tokenización", period: "Q1 - 23", subtitle: 'Desarrollo', description: "Plataforma 100% operativa para tokenización de bienes.", value: 2 },
+  { id: 3, iconTitle: <BiSolidDoughnutChart />, title: "Ciencia Datos", period: "Q2 - 23", subtitle: 'AI', description: "Fase I: Modelo de gobierno de aprendizaje de datos.", value: 3 },
+  { id: 4, iconTitle: <FaChartLine />, title: "Exchange", period: "Q3 - 23", subtitle: 'Venta Pública', description: "Publicación de token en Exchange.", value: 4 },
+];

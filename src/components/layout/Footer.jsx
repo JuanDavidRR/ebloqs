@@ -22,8 +22,7 @@ const Footer = () => {
           </div>
           <h4>La nueva forma de invertir</h4>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            consectetur quisquam autem odio asperiores
+            Ebloqs compañía europea con licencia VASP NTR 4400-1839-5132
           </p>
         </div>
         <div>Ebloqs derechos reservados</div>

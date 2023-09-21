@@ -12,6 +12,9 @@ import { tabs } from "@/utils/constants/tabs";
 import { fadeIn } from "@/utils/animations/motion";
 import logoNegro from "public/images/logo-negro.png";
 import Image from "next/image";
+import { FaChartLine, FaCoins, FaServer } from "react-icons/fa";
+import Button from "@/components/Button";
+import { BiAbacus, BiSolidDoughnutChart } from "react-icons/bi";
 
 // export const allIngredients = [
 //   { icon: "🪙", label: "$50 USD", description: "Ingresos al 10%" },
@@ -24,16 +27,19 @@ import Image from "next/image";
 
 const Calculator = () => {
   const [activeContentIndex, setActiveContentIndex] = useState(0);
+  const [selectedTab, setSelectedTab] = useState(tabs[0]);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const handleRangeChange = (event) => {
     const newIndex = parseInt(event.target.value);
     setActiveContentIndex(newIndex);
+    setSelectedTab(tabs[newIndex]);
   };
 
-  const activeContent = tabs[activeContentIndex];
-
-  const [selectedTab, setSelectedTab] = useState(tabs[0]);
-  const scrollRef = useRef<HTMLDivElement>(null);
+  const handleButtonClick = (value) => {
+    setActiveContentIndex(value);
+    setSelectedTab(tabs[value]);
+  };
 
   const { scrollYProgress } = useScroll({
     target: scrollRef,
@@ -43,6 +49,9 @@ const Calculator = () => {
   const y = useTransform(scrollYProgress, [0, 0.1], ["1%", "100%"], {
     clamp: true,
   });
+
+  const activeContent = tabs[activeContentIndex];
+
   return (
     <section
       id="invierte"
@@ -60,15 +69,61 @@ const Calculator = () => {
         >
           <div className="flex justify-center items-center p-1 md:p-7 bg-blue-200  rounded-xl">
             <div className="flex justify-center items-center p-1 md:p-5 background-gradient rounded-xl w-full">
-              <div className="flex flex-col rounded-xl bg-white w-full p-5 md:p-10">
+              <div className="flex flex-col rounded-xl bg-white w-full p-5 md:p-16">
                 <div className="flex items-center text-center justify-center">
                   <h2>
-                    ¿Cuánto deseas{" "}
-                    <span className="gradient-text font-bold">invertir</span>{" "}
-                    con nosotros?
-                    <p>Desliza y descubre las oportunidades que Eblqs ofrece</p>
+                    <span className="gradient-text font-bold">Roadmap</span>{" "}
+                    ebloqs© 2023-2024
                   </h2>
                 </div>
+                <div className="text-center mt-10">
+                  <p>
+                    <em> Desliza o pulsa los botones para descubrir más sobre nuestro proceso</em>
+                  </p>
+                </div>
+                <section className="flex flex-row items-center justify-between text-center gap-2 md:gap-3 lg:gap-12 my-5 md:my-10">
+                  <div
+                    onClick={() => handleButtonClick(0)}
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full h-14 md:h-20 lg:h-32 lg:w-32"
+                  >
+                    <p className="text-3xl md:text-4xl xl:5xl">
+                      <FaServer />
+                    </p>
+                  </div>
+                  <div
+                    onClick={() => handleButtonClick(1)}
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full h-14 md:h-20 lg:h-32 lg:w-32"
+                  >
+                    <p className="text-3xl md:text-4xl xl:5xl">
+                      <FaCoins />
+                    </p>
+                  </div>
+                  <div
+                    onClick={() => handleButtonClick(2)}
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full h-14 md:h-20 lg:h-32 lg:w-32"
+                  >
+                    <p className="text-3xl md:text-4xl xl:5xl">
+                      <BiAbacus />
+                    </p>
+                  </div>
+                  <div
+                    onClick={() => handleButtonClick(3)}
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full h-14 md:h-20 lg:h-32 lg:w-32"
+                  >
+                    <p className="text-3xl md:text-4xl xl:5xl">
+                      <BiSolidDoughnutChart />
+                    </p>
+                  </div>
+                  <div
+                    onClick={() => handleButtonClick(4)}
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full h-14 md:h-20 lg:h-32 lg:w-32"
+                  >
+                    <p className="text-3xl md:text-4xl xl:5xl">
+                      <FaChartLine />
+                    </p>
+                  </div>
+                </section>
+
                 <div className="flex flex-col items-center justify-center text-center">
                   <input
                     type="range"
@@ -76,12 +131,10 @@ const Calculator = () => {
                     max={tabs.length - 1}
                     value={activeContentIndex}
                     onChange={handleRangeChange}
-                    className="w-full h-10 my-10"
+                    className="w-[85%] lg:w-[90%] h-10 my-5 lg:mb-10"
                   />
                   <AnimatePresence mode="wait">
-                    <h3 className="text-center">
-                      Invirtiendo {activeContent.label} con Ebloqs:
-                    </h3>
+                    <h3 className="text-center py-5">{activeContent.title}</h3>
 
                     <motion.div
                       key={selectedTab ? selectedTab.label : "empty"}
@@ -89,18 +142,13 @@ const Calculator = () => {
                       animate={{ y: 0, opacity: 1 }}
                       exit={{ y: -10, opacity: 0 }}
                       transition={{ duration: 0.2 }}
-                      className="flex flex-col gap-10 justify-center items-center text-5xl"
+                      className="flex flex-col gap-5 justify-center items-center text-5xl"
                     >
-                      <p className="mt-10">
-                        Puedes obtener {activeContent.description} y muchos
-                        otros beneficios
-                      </p>
-                      <Image
-                        src={logoNegro}
-                        alt="logo en negro"
-                        width={200}
-                        height={200}
-                      />
+                      <div className={`${styles.btn} text-2xl`}>
+                        {activeContent.period}
+                      </div>
+                      <h4>{activeContent.subtitle}</h4>
+                      <p>{activeContent.description}</p>
                     </motion.div>
                   </AnimatePresence>
                 </div>

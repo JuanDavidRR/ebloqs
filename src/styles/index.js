@@ -19,6 +19,8 @@ const styles = {
     flexCenter: 'flex justify-center items-center',
     flexStart: 'flex justify-start items-start',
     flexEnd: 'flex justify-end',
+
+    simpleCard: 'shadow-md shadow-black-market p-8 rounded-lg',
   
     // hero section
     heroHeading:

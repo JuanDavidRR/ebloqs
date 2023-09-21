@@ -12,8 +12,8 @@ const ProjectCard = ({ title, description, image, investors, goal, animation }) 
       <Image
         src={image}
         className="w-full rounded-tl-3xl rounded-tr-3xl"
-        width={300}
-        height={200}
+        width={1000}
+        height={1000}
         alt=""
       />
       <div className="flex px-5 pt-0 pb-5 flex-col gap-3">

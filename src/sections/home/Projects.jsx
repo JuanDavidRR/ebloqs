@@ -39,9 +39,9 @@ const Projects = () => {
               <ProjectCard key={project.id} {...project} />
             ))}
           </section>
-          <section className="mx-auto">
+          {/* <section className="mx-auto">
             <Button url="/marketplace" content="Ver proyectos" />
-          </section>
+          </section> */}
         </section>
       </section>
     </motion.section>
