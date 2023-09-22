@@ -12,6 +12,7 @@ import DownloadBtn from "@/components/DownloadBtn";
 import { fadeIn } from "@/utils/animations/motion";
 import { FadeText, TypingText } from "@/components/CustomTexts";
 import Image from "next/image";
+import ImageIco from "@/components/ImageIco";
 
 const TokenEbl = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -127,48 +128,7 @@ const TokenEbl = () => {
           variants={fadeIn("right", "tween", 0.2, 1)}
           className={`flex-1 flex justify-center flex-col gap-10 py-20`}
         >
-          <h3>Sección en construcción</h3>
-
-          <Image
-            className="hidden lg:block"
-            src="/images/graficoico/7.png"
-            alt="EBL ICO"
-            width={1500}
-            height={1500}
-          />
-          <Image
-            className="md:hidden"
-            src="/images/graficoico/ico-mobile.png"
-            alt="EBL ICO"
-            width={1500}
-            height={1500}
-          />
-          <section className="flex gap-5">
-            <div className={styles.simpleCard}>
-              <h5 className="font-semibold">Ronda Privada</h5>
-              <ul className="list-none">
-                <li>EBL 5.000.000</li>
-                <li>Precio por token USD 0.08</li>
-                <li>Inversión mínima USD 50</li>
-                <li>Bloqueo 12 meses</li>
-              </ul>
-            </div>
-            <div className={styles.simpleCard}>
-              <h5 className="font-semibold">Pre Venta</h5>
-              <ul className="list-none">
-                <li>EBL 15.000.000</li>
-                <li>Precio por token USD 0.10</li>
-                <li>Inversión mínima USD 100</li>
-                <li>Bloqueo 12 meses</li>
-              </ul>
-            </div>
-            <div className="w-1/3">
-              <h4 className="text-center">
-                Alta rentabilidad al lanzar ICO con plataforma operativa en
-                Blockchain
-              </h4>
-            </div>
-          </section>
+          <ImageIco/>
         </motion.div>
       </motion.div>
     </section>

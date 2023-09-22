@@ -79,7 +79,7 @@ const Video = () => {
           }}
           className={`${styles.flexCenter} hidden md:flex w-full mx-auto mt-7 border-transparent rounded-lg`}
         >
-          <div className=" p-2 md:p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg w-full h-[80vh]">
+          <div className=" p-2 md:p-10 bg-gradient-to-r from-primary via-purple-500 to-secondary 100%) rounded-lg w-full h-[30rem] lg:h-[80vh]">
             {/* <video autoPlay muted loop className="w-full h-full" controls>
               <source src={"/videos/mainVideo.mp4"} type="video/mp4"/>
             </video> */}

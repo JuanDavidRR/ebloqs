@@ -67,7 +67,7 @@ const Calculator = () => {
           variants={fadeIn("up", "tween", 0.1, 1)}
           className={`flex-1 flex justify-center flex-col gap-10`}
         >
-          <div className="flex justify-center items-center p-1 md:p-7 bg-blue-200  rounded-xl">
+          <div className="flex justify-center items-center p-1 md:p-7 bg-blue-200 rounded-xl">
             <div className="flex justify-center items-center p-1 md:p-5 background-gradient rounded-xl w-full">
               <div className="flex flex-col rounded-xl bg-white w-full p-5 md:p-16">
                 <div className="flex items-center text-center justify-center">
@@ -81,44 +81,44 @@ const Calculator = () => {
                     <em> Desliza o pulsa los botones para descubrir más sobre nuestro proceso</em>
                   </p>
                 </div>
-                <section className="flex flex-row items-center justify-between text-center gap-2 md:gap-3 lg:gap-12 my-5 md:my-10">
+                <section className="grid grid-cols-5 items-center justify-between text-center gap-4 md:gap-3 lg:gap-8 my-5 md:my-10">
                   <div
                     onClick={() => handleButtonClick(0)}
-                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full h-14 md:h-20 lg:h-32 lg:w-32"
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full w-full h-full"
                   >
-                    <p className="text-3xl md:text-4xl xl:5xl">
+                    <p className="text-2xl md:text-4xl xl:5xl">
                       <FaServer />
                     </p>
                   </div>
                   <div
                     onClick={() => handleButtonClick(1)}
-                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full h-14 md:h-20 lg:h-32 lg:w-32"
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full w-full h-full"
                   >
-                    <p className="text-3xl md:text-4xl xl:5xl">
+                    <p className="text-2xl md:text-4xl xl:5xl">
                       <FaCoins />
                     </p>
                   </div>
                   <div
                     onClick={() => handleButtonClick(2)}
-                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full h-14 md:h-20 lg:h-32 lg:w-32"
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full w-full h-full"
                   >
-                    <p className="text-3xl md:text-4xl xl:5xl">
+                    <p className="text-2xl md:text-4xl xl:5xl">
                       <BiAbacus />
                     </p>
                   </div>
                   <div
                     onClick={() => handleButtonClick(3)}
-                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full h-14 md:h-20 lg:h-32 lg:w-32"
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full w-full h-full"
                   >
-                    <p className="text-3xl md:text-4xl xl:5xl">
+                    <p className="text-2xl md:text-4xl xl:5xl">
                       <BiSolidDoughnutChart />
                     </p>
                   </div>
                   <div
                     onClick={() => handleButtonClick(4)}
-                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full h-14 md:h-20 lg:h-32 lg:w-32"
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full w-full h-full"
                   >
-                    <p className="text-3xl md:text-4xl xl:5xl">
+                    <p className="text-2xl md:text-4xl xl:5xl">
                       <FaChartLine />
                     </p>
                   </div>

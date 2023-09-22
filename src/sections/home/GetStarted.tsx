@@ -71,7 +71,7 @@ const GetStarted = () => {
             {startingFeatures.map((feature, index) => (
               <div
                 key={feature.id}
-                className={`flex justify-start items-center flex-1 gap-5`}
+                className={`flex justify-start items-center flex-1 gap-5 z-10`}
               >
                 <div
                   className={`${styles.flexCenter} py-3 px-5 h-16 w-16 rounded-full bg-black-market`}
@@ -89,7 +89,7 @@ const GetStarted = () => {
             <Button
               content="Simula tu inversión"
               url="#invierte"
-              styleText="mx-auto my-10"
+              styleText="mx-auto my-10 z-10"
             />
           </div>
         </motion.div>
