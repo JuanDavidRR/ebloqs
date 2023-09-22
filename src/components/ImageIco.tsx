@@ -101,7 +101,7 @@ const ComponentsText = () => (
       }}
       initial="hidden"
       whileInView="show"
-      className='absolute w-[50%] top-[5%] right-0 sm:w-auto md:left-[23%] md:-top-[25%] lg2:-top-[10%] xl2:-top-[10%]'
+      className='absolute w-[64%] top-[9%] right-3 sm:w-auto md:left-[23%] md:-top-[25%] lg2:-top-[10%] xl2:-top-[10%]'
       viewport={{ once: false, amount: 0.25 }}
     >
       <div className='text-xs md:leading-3 lg:leading-[0.8rem] lg:text-base flex flex-col gap-3'>
@@ -131,7 +131,7 @@ const ComponentsText = () => (
       }}
       initial="hidden"
       whileInView="show"
-      className='absolute w-[50%] top-[37%] right-0 md:w-auto md:left-[23%] md:top-[80%] lg:left-[23%] lg:-bottom-[10%]'
+      className='absolute w-[64%] top-[41%] right-3 md:w-auto md:left-[23%] md:top-[80%] lg:left-[23%] lg:-bottom-[10%]'
       viewport={{ once: false, amount: 0.25 }}
     >
         <div className='text-xs md:leading-3 md:text-base flex flex-col gap-3'>
@@ -160,7 +160,7 @@ const ComponentsText = () => (
         }}
         initial="hidden"
         whileInView="show"
-        className='absolute w-[50%] right-0 bottom-[12%] md:-right-[4%] md:bottom-[33%] lg:bottom-[36%] lg2:-right-[2%] xl2:-right-[2%] xl2:bottom-[40%]'
+        className='absolute w-[50%] right-3 bottom-[12%] md:-right-[4%] md:bottom-[33%] lg:bottom-[36%] lg2:-right-[2%] xl2:-right-[2%] xl2:bottom-[40%]'
         viewport={{ once: false, amount: 0.25 }}
       >
         <h4 className="text-lg lg2:text-2xl xl2:text-3xl text-left flex flex-col text-black md:text-center md:text-white">
