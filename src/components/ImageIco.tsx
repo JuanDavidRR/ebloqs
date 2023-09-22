@@ -160,10 +160,10 @@ const ComponentsText = () => (
         }}
         initial="hidden"
         whileInView="show"
-        className='absolute w-[50%] right-3 bottom-[12%] md:-right-[4%] md:bottom-[33%] lg:bottom-[36%] lg2:-right-[2%] xl2:-right-[2%] xl2:bottom-[40%]'
+        className='absolute w-[64%] lg:w-1/2 right-3 bottom-[12%] md:-right-[10%] md:bottom-[37%] lg:bottom-[36%] lg2:-right-[2%] xl2:-right-[2%] xl2:bottom-[40%]'
         viewport={{ once: false, amount: 0.25 }}
       >
-        <h4 className="text-lg lg2:text-2xl xl2:text-3xl text-left flex flex-col text-black md:text-center md:text-white">
+        <h4 className="text-[20px] md:text-[17px] lg2:text-2xl xl2:text-3xl text-left flex flex-col text-black md:text-center md:text-white">
           <span>Alta rentabilidad al lanzar</span>
           <span>ICO con plataforma</span>
           <span>operativa en

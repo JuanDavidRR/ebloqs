@@ -81,10 +81,10 @@ const Calculator = () => {
                     <em> Desliza o pulsa los botones para descubrir más sobre nuestro proceso</em>
                   </p>
                 </div>
-                <section className="grid grid-cols-5 items-center justify-between text-center gap-4 md:gap-3 lg:gap-8 my-5 md:my-10">
+                <section className="grid grid-cols-5 place-items-center text-center gap-4 md:gap-3 lg:gap-8 my-5 md:my-10">
                   <div
                     onClick={() => handleButtonClick(0)}
-                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full w-full h-full"
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-8 lg:p-16 rounded-full w-[50px] h-[50px]"
                   >
                     <p className="text-2xl md:text-4xl xl:5xl">
                       <FaServer />
@@ -92,7 +92,7 @@ const Calculator = () => {
                   </div>
                   <div
                     onClick={() => handleButtonClick(1)}
-                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full w-full h-full"
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-8 lg:p-16 rounded-full w-[50px] h-[50px]"
                   >
                     <p className="text-2xl md:text-4xl xl:5xl">
                       <FaCoins />
@@ -100,7 +100,7 @@ const Calculator = () => {
                   </div>
                   <div
                     onClick={() => handleButtonClick(2)}
-                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full w-full h-full"
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-8 lg:p-16 rounded-full w-[50px] h-[50px]"
                   >
                     <p className="text-2xl md:text-4xl xl:5xl">
                       <BiAbacus />
@@ -108,7 +108,7 @@ const Calculator = () => {
                   </div>
                   <div
                     onClick={() => handleButtonClick(3)}
-                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full w-full h-full"
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-8 lg:p-16 rounded-full w-[50px] h-[50px]"
                   >
                     <p className="text-2xl md:text-4xl xl:5xl">
                       <BiSolidDoughnutChart />
@@ -116,7 +116,7 @@ const Calculator = () => {
                   </div>
                   <div
                     onClick={() => handleButtonClick(4)}
-                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-5 lg:p-8 rounded-full w-full h-full"
+                    className="flex-1 flex flex-col items-center justify-center text-center background-gradient cursor-pointer text-white p-2 md:p-8 lg:p-16 rounded-full w-[50px] h-[50px]"
                   >
                     <p className="text-2xl md:text-4xl xl:5xl">
                       <FaChartLine />
@@ -128,6 +128,7 @@ const Calculator = () => {
                   <input
                     type="range"
                     min="0"
+                    id="range"
                     max={tabs.length - 1}
                     value={activeContentIndex}
                     onChange={handleRangeChange}
