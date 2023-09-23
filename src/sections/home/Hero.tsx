@@ -52,8 +52,11 @@ const Hero = () => {
           >
             Ebloqs brinda acceso a las personas con pequeños capitales a
             proyectos que antes eran restrictivos e inalcanzables por requerir
-            grandes inversiones. INVERSIÓN SIN FRICCIÓN Y AL ALCANCE DE TODOS
+            grandes inversiones.
           </motion.p>
+          <motion.h5 variants={fadeIn("right", "tween", 1.5, 1)}>
+            Inversión sin fricción y al alcance de todos.
+          </motion.h5>
           <motion.section
             variants={fadeIn("up", "tween", 2.5, 1)}
             className="flex flex-col justify-center lg:justify-start md:flex-row gap-10 mt-7"
