@@ -82,7 +82,7 @@ const Hero = () => {
             className="hero-gradient z-0"
           />
           <Image
-            src={"/images/mockup/1.png"}
+            src={"/images/mockup/4.png"}
             className=" z-10"
             height={450}
             width={450}

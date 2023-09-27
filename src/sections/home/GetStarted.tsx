@@ -62,7 +62,7 @@ const GetStarted = () => {
             <TypingText element="h3" title="| Un mundo de posiblidades" />
 
             <FadeText heading="h2" textStyles="" delay={0} direction="right">
-              ¿Cómo hacer parte de{" "}
+              ¿Cómo ser parte de{" "}
               <span className="gradient-text font-bold">la nueva era</span> de
               inversión?
             </FadeText>
@@ -82,15 +82,10 @@ const GetStarted = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl">{feature.title}</h3>
-                  <p>{feature.content}</p>
+                  <p className="text-2xl">{feature.content}</p>
                 </div>
               </div>
             ))}
-            <Button
-              content="Simula tu inversión"
-              url="#invierte"
-              styleText="mx-auto my-10 z-10"
-            />
           </div>
         </motion.div>
         <motion.div

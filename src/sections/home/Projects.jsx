@@ -30,7 +30,7 @@ const Projects = () => {
           <FadeText heading="h2" textStyles="" delay={0} direction="right">
             Nuestros proyectos
           </FadeText>
-          <FadeText heading="p" textStyles="" delay={0} direction="right">
+          <FadeText heading="p" textStyles="text-2xl" delay={0} direction="right">
             Escoge tu sector e industria preferida: accede a proyectos novedosos
             impulsados por tecnología Blockchain:
           </FadeText>

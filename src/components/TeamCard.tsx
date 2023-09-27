@@ -28,18 +28,19 @@ const TeamCard = ({
       //   }
       // }}
       // animate={animate}
+      className="flex-1"
       whileHover={{ scale: 1.02 }}
     >
       <motion.div
         variants={fadeIn("up", "tween", animation, 0.5)}
-        className="flex flex-col bg-white gap-0 text-center shadow-md shadow-gray-500 p-5"
+        className="flex-1 flex flex-col bg-white gap-0 text-center shadow-md shadow-gray-500 p-5"
       >
         <div>
           <Image
             src={image}
             width={500}
             height={500}
-            className="w-1/2 mx-auto mb-5"
+            className="w-2/3 mx-auto mb-5"
             alt="imageTeam"
           />
         </div>

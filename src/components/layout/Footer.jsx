@@ -25,7 +25,7 @@ const Footer = () => {
             Ebloqs compañía europea con licencia VASP NTR 4400-1839-5132
           </p>
         </div>
-        <div>Ebloqs derechos reservados</div>
+        <p>Ebloqs derechos reservados. Consulta nuestros <Link className="text-primary-blue" href='https://drive.google.com/file/d/1JkUiDILwH4-eDwfUZs_mD02HUiEiSThX/view?usp=sharing' target="_blank">Términos y condiciones</Link></p>
       </section>
       <div className="footer-gradient" />
       <section className="flex flex-col gap-5">

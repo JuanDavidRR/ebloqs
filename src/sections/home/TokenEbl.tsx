@@ -39,7 +39,7 @@ const TokenEbl = () => {
         className={`mx-auto flex flex-col gap-8`}
       >
         <div className={`${styles.flexCenter} flex-col gap-6`}>
-          <TypingText element="h3" title="| Haz parte del futuro" />
+          <TypingText element="h3" title="| Forma parte del futuro" />
           <FadeText
             heading="h2"
             textStyles="flex flex-col items-center gap-5"
@@ -54,7 +54,7 @@ const TokenEbl = () => {
             />
             Token EBL
           </FadeText>
-          <FadeText heading="p" textStyles="" delay={0} direction="right">
+          <FadeText heading="p" textStyles="text-2xl" delay={0} direction="right">
             A partir del lanzamiento de la ICO con la plataforma operativa, esto
             generará alta rentabilidad al EBL que es el combustible del
             ecosistema ebloqs®.

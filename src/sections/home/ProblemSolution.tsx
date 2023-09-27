@@ -12,7 +12,7 @@ import { AiOutlineAlert, AiOutlineBulb } from "react-icons/ai";
 import ecoImg from "public/images/mockup/3.png";
 import { fadeIn, staggerContainer } from "@/utils/animations/motion";
 import blockchain from "public/images/fondo.png";
-import phone from "public/images/mockup/5.png";
+import phone from "public/images/mockup/6.png";
 
 const ProblemSolution = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -83,12 +83,6 @@ const ProblemSolution = () => {
                   inversionistas multiplicar sus ganancias.
                 </p>
               </li>
-              <li>
-                <p>
-                  Las fuentes de financiamiento cada vez son más limitadas y
-                  costosas
-                </p>
-              </li>
             </ul>
           </section>
         </div>
@@ -105,12 +99,12 @@ const ProblemSolution = () => {
         </motion.div>
         <motion.div
           variants={fadeIn("up", "tween", 0.5, 1)}
-          className="absolute w-1/2"
+          className="absolute w-[45%]"
         >
           <Image
             src={phone}
-            width={1000}
-            height={1000}
+            width={900}
+            height={900}
             alt="phone"
             className="rotate-[5deg]"
           />
@@ -121,7 +115,7 @@ const ProblemSolution = () => {
           transition={{ duration: 1 }}
           style={{ y }}
           viewport={{ once: false, amount: 0.9 }}
-          className="absolute left-40 top-5"
+          className="absolute left-40"
         >
           <Image src={personOne} width={150} height={20} alt="personPhone" />
         </motion.div>

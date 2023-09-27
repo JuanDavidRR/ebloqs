@@ -39,11 +39,6 @@ const Ecosystem = () => {
         <div className="flex flex-col lg:flex-row gap-20">
           <div className="flex-1 flex flex-col md:flex-row gap-12">
             <div className="flex flex-col justify-center text-white gap-5 z-10">
-              <TypingText
-                element="h3"
-                title="¿Conoces el poder de Blockchain?"
-                textStyles="text-lg sm:text-2xl flex flex-wrap"
-              />
               <FadeText heading="h2" textStyles="" delay={0} direction="right">
                 Nuestro Ecosistema
               </FadeText>
@@ -53,11 +48,10 @@ const Ecosystem = () => {
               >
                 <p>
                   Ebloqs hace todo mas sencillo: accede a las redes más seguras
-                  y fáciles de usar con el costo más bajo de transacción.
+                  y fáciles de usar con bajo costo de transacción. Utilizamos tecnología Blockchain sobre la red Ethereum y subred Polygon.
                 </p>
                 <p>
-                  ¿Tienes conocimiento del universo Crypto? ¡No hay problema!
-                  Haz parte de proyectos en diferentes industrias como las
+                  Forma parte de proyectos en diferentes industrias como
                   bienes raíces, hotelería y turismo, tecnología, automotriz,
                   música, arte y NFTs ¡Entre muchos más!.
                 </p>
@@ -86,11 +80,11 @@ const Ecosystem = () => {
               className="gradient-01"
             />
             <Image
-              src="/images/mockup/6.png"
+              src="/images/mockup/5.png"
               alt="phone"
-              width={400}
-              height={400}
-              className="z-20 w-1/2"
+              width={2500}
+              height={2500}
+              className="z-20 w-[60%]"
             />
 
             <motion.div
@@ -99,7 +93,7 @@ const Ecosystem = () => {
               transition={{ duration: 1 }}
               viewport={{ once: false, amount: 0.9 }}
               style={{ y }}
-              className="absolute right-32 z-20"
+              className="absolute right-36 z-20"
             >
               <Image
                 src={
@@ -136,7 +130,7 @@ const Ecosystem = () => {
               transition={{ duration: 1 }}
               viewport={{ once: false, amount: 0.9 }}
               style={{ y }}
-              className="absolute left-12 top-52 rounded-md bg-[#151a38] bg-opacity-70 flex flex-col pr-12 pl-4 py-2 z-20"
+              className="absolute left-8 top-52 rounded-md bg-[#151a38] bg-opacity-70 flex flex-col pr-12 pl-4 py-2 z-20"
             >
               <Image
                 src={
