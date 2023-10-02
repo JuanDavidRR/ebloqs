@@ -101,16 +101,16 @@ const ComponentsText = () => (
       }}
       initial="hidden"
       whileInView="show"
-      className='absolute w-[64%] top-[9%] right-3 sm:w-auto md:left-[23%] md:-top-[25%] lg2:-top-[10%] xl2:-top-[10%]'
-      viewport={{ once: false, amount: 0.25 }}
+      className='absolute text-[10px] w-[64%] top-[9%] right-3 sm:w-auto md:left-[23%] md:-top-[25%] lg2:-top-[10%] xl2:-top-[10%]'
+      // viewport={{ once: false, amount: 0.25 }}
     >
       <div className='text-xs md:leading-3 lg:leading-[0.8rem] lg:text-base flex flex-col gap-3'>
         <h5 className="font-semibold">Ronda Privada</h5>
-        <ul className="list-none text-[5px] flex flex-col gap-3">
-          <li>EBL 5.000.000</li>
-          <li>Precio por token USD 0.08</li>
-          <li>Inversión mínima USD 50</li>
-          <li>Bloqueo 12 meses</li>
+        <ul className="list-none flex flex-col gap-3">
+          <li className="text-[20px]">EBL 5.000.000</li>
+          <li className="text-[20px]">Precio por token USD 0.08</li>
+          <li className="text-[20px]">Inversión mínima USD 50</li>
+          <li className="text-[20px]">Bloqueo 12 meses</li>
         </ul>
       </div>
     </motion.div>
@@ -137,10 +137,10 @@ const ComponentsText = () => (
         <div className='text-xs md:leading-3 md:text-base flex flex-col gap-3'>
           <h5 className="font-semibold">Pre Venta</h5>
           <ul className="list-none flex flex-col gap-3">
-            <li>EBL 15.000.000</li>
-            <li>Precio por token USD 0.10</li>
-            <li>Inversión mínima USD 100</li>
-            <li>Bloqueo 12 meses</li>
+            <li className="text-[20px]">EBL 15.000.000</li>
+            <li className="text-[20px]">Precio por token USD 0.10</li>
+            <li className="text-[20px]">Inversión mínima USD 100</li>
+            <li className="text-[20px]">Bloqueo 12 meses</li>
           </ul>
         </div>
       </motion.div><motion.div

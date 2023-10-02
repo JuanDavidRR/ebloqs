@@ -18,7 +18,7 @@ const ProjectCard = ({ title, description, image, investors, goal, animation }) 
         alt=""
       />
       <div className="flex px-5 pt-0 pb-5 flex-col gap-3">
-        <h4 className="font-bold text-xl">{title}</h4>
+        <h4 className="font-bold text-2xl">{title}</h4>
         <p>{description}</p>
         <p>Inversión mínima: ${investors} USD</p>
           <Button content='Descargar Whitepaper' url={goal} styleText='mx-auto my-3'/>

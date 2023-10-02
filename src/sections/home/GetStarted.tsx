@@ -74,15 +74,15 @@ const GetStarted = () => {
                 className={`flex justify-start items-center flex-1 gap-5 z-10`}
               >
                 <div
-                  className={`${styles.flexCenter} py-3 px-5 h-16 w-16 rounded-full bg-black-market`}
+                  className={`${styles.flexCenter} p-5 h-[50px] w-[50px] rounded-full bg-black-market`}
                 >
-                  <p className="font-bold text-[20px] text-white">
+                  <p className="font-bold text-white">
                     {index + 1}
                   </p>
                 </div>
                 <div>
                   <h3 className="text-2xl">{feature.title}</h3>
-                  <p className="text-2xl">{feature.content}</p>
+                  <p>{feature.content}</p>
                 </div>
               </div>
             ))}

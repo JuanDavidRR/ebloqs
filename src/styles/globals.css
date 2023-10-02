@@ -62,8 +62,9 @@ html {
 }
 
 p,
-a, li {
-  font-size: 19px;
+a,
+li {
+  font-size: 1.15vw;
 }
 h1,
 h2,
@@ -263,7 +264,7 @@ h5 {
 
 .team-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   gap: 30px;
 }
 
@@ -469,5 +470,14 @@ audio {
   input[type="range"]::-ms-thumb {
     width: 30px;
     height: 30px;
+  }
+
+  .team-items {
+    display: block;
+  }
+  p,
+  a,
+  li {
+    font-size: 20px;
   }
 }

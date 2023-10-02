@@ -54,7 +54,7 @@ const TokenEbl = () => {
             />
             Token EBL
           </FadeText>
-          <FadeText heading="p" textStyles="text-2xl" delay={0} direction="right">
+          <FadeText heading="p" textStyles="" delay={0} direction="right">
             A partir del lanzamiento de la ICO con la plataforma operativa, esto
             generará alta rentabilidad al EBL que es el combustible del
             ecosistema ebloqs®.

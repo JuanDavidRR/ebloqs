@@ -1,8 +1,8 @@
 export const startingFeatures = [
     {
         id: 1,
-        title: '¿Qué en la actualidad es la Blockchain?',
-        content: 'Invierte en proyectos soportados por la tecnología de cadena de bloques más segura del mundo.',
+        title: '¿Qué es Blockchain?',
+        content: 'Invierte en proyectos soportados por la tecnología de cadena de bloques, capaz de incrementar la eficiencia, transparencia y confianza.',
         icon: '<FaEthereum/>,'
     },
     {

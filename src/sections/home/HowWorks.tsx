@@ -23,7 +23,7 @@ const HowWorks = () => {
           Invertir:{" "}
           <span className="gradient-text font-bold">Antes vs Ahora</span>
         </FadeText>
-        <FadeText heading="p" textStyles="text-2xl" delay={0} direction="right">
+        <FadeText heading="p" textStyles="" delay={0} direction="right">
           Ebloqs facilita el encuentro y la transaccionalidad entre los
           propietarios de activos, proyectos o startups con la gran masa de
           pequeños capitales que está disponible en el mundo entero y que

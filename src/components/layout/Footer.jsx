@@ -52,7 +52,7 @@ const Footer = () => {
             <ul className="flex justify-center lg:justify-start gap-5">
               {social.map((link) => (
                 <li key={link.id}>
-                  <Link className="text-2xl" href={link.link}>{link.icon}</Link>
+                  <Link className="text-2xl" href={link.link} target="_blank">{link.icon}</Link>
                 </li>
               ))}
             </ul>

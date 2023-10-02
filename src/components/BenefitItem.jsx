@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const BenefitItemSolution = ({  description, icon, title }) => (
   <motion.div
-    className={`flex items-center flex-col gap-4 shadown-card w-full py-5 px-5 rounded-lg`}
+    className={`flex items-center flex-col gap-4 shadown-card w-full p-7 text-center rounded-lg`}
     whileHover={{
       scale: 1.04,
       boxShadow: `1px 6px 22px 7px var(--primary-purple)`

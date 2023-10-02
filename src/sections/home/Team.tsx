@@ -52,10 +52,10 @@ const Team = () => {
 
   return (
     <motion.section
-      variants={staggerContainer}
+     variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      // viewport={{ once: false, amount: 0.25 }}
       id="equipo"
       className={`${styles.paddings} bg-slate-200 `}
       // ref={scrollRef}
@@ -70,7 +70,7 @@ const Team = () => {
           de trabajo
         </FadeText>
       </section>
-      <section className="hidden gap-20 my-10">
+      {/* <section className="hidden gap-20 my-10">
         {team.map((teamMember, index) => (
           <motion.div
             style={{
@@ -89,15 +89,14 @@ const Team = () => {
             <TeamCard animate={slideControls} {...teamMember} />
           </motion.div>
         ))}
-      </section>
+      </section> */}
       <motion.section
         variants={fadeIn("up", "tween", 1, 0)}
-        className="md:w-[90%] mx-auto flex lg:flex-row flex-col gap-5 my-10"
+        className="mx-auto team-items my-10"
       >
         {team.map((teamMember) => (
           <TeamCard
             key={teamMember.id}
-            animate={slideControls}
             {...teamMember}
           />
         ))}
