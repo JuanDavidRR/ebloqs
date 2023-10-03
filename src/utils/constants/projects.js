@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         title: 'NFTs Verde 70',
-        description: 'Reconocida banda de rock ecuatoriana ingresa a la WEB3 con sus NFTs coleccionables. ¡Adquiérelos con beneficios extras en la etapa de Whitelist!',
+        description: 'Reconocida banda de pop-rock ecuatoriana ingresa a la WEB3 con sus NFTs coleccionables. ¡Adquiérelos con beneficios extras en la etapa de Whitelist!',
         image: "/images/verde70.jpeg",
         investors: 85,
         goal: '/',
