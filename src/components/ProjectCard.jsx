@@ -21,7 +21,7 @@ const ProjectCard = ({ title, description, image, investors, goal, animation }) 
         <h4 className="font-bold text-2xl">{title}</h4>
         <p>{description}</p>
         <p>Inversión mínima: ${investors} USD</p>
-          <Button content='Descargar Whitepaper' url={goal} styleText='mx-auto my-3'/>
+          {/* <Button content='Descargar Whitepaper' url={goal} styleText='mx-auto my-3'/> */}
       </div>
     </motion.div>
   );
