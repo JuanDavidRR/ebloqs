@@ -34,7 +34,7 @@ export const team = [
     {
         id: 4,
         fullname: 'Francisco Betancourt',
-        quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt aspernatur obcaecati magnam sint a odio, eveniet in.',
+        quote: 'Abogado alejado de las prácticas tradicionales del derecho, buscador e integrador de nuevas líneas de negocio, orientadas a desarrollar modelos novedosos y exitosos de tokenización en todas las áreas posibles y poder ofertar servicios de manera globalizada.',
         image: francisco,
         linkedin: 'https://www.linkedin.com/in/francisco-betancourt-a31163265',
         job: 'CMO',
