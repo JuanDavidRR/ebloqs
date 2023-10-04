@@ -27,7 +27,7 @@ export const team = [
         fullname: 'Patricia Silva',
         quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt aspernatur obcaecati magnam sint a odio, eveniet in.',
         image: patricia,
-        linkedin: 'https://ec.linkedin.com/in/nicholas-betancourt-85099b151?trk=org-employees',
+        linkedin: 'https://www.linkedin.com/in/patricia-silva-79b631226',
         job: 'CMO',
         animation: 1.5
     },
@@ -36,7 +36,7 @@ export const team = [
         fullname: 'Francisco Betancourt',
         quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt aspernatur obcaecati magnam sint a odio, eveniet in.',
         image: francisco,
-        linkedin: 'https://ec.linkedin.com/in/nicholas-betancourt-85099b151?trk=org-employees',
+        linkedin: 'https://www.linkedin.com/in/francisco-betancourt-a31163265',
         job: 'CMO',
         animation: 1.5
     },
