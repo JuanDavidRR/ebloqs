@@ -16,7 +16,7 @@ export const team = [
     {
         id: 2,
         fullname: 'Javier Cervantes',
-        quote: 'Ingeniero en Negocios Internacionales, Tecnologías de Información, con dos Masters en Dirección Estratégica TICS por las Universidades de León (España) e Internacional Iberoamericana (México). Tiene más de 15 años de experiencia en la transformación de organizaciones. Ha ocupado roles estratégicos en empresas como Banco Guayaquil, Banco Pichincha, Banco Pacifico, Tata Consultancy Service, IBM. Actualmente es catedrático de posgrado en la Universidad Nacional de Honduras y Escuela de Negocios ESPAE.',
+        quote: 'Ingeniero en Tecnologías de Información y Negocios, dos Masters en TICS de la Universidad León (España), Iberoamericana (México). Roles estratégicos en empresas: Banco Guayaquil, Banco Pichincha, Banco Pacifico, Tata Consultancy Service, IBM. Actualmente es catedrático de posgrado en la Universidad Nacional de Honduras y ESPAE.',
         image: javier,
         linkedin: 'https://ec.linkedin.com/in/javier-cervantes-ramirez/en?trk=org-employees',
         job: 'CGO',
@@ -25,10 +25,10 @@ export const team = [
     {
         id: 3,
         fullname: 'Patricia Silva',
-        quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt aspernatur obcaecati magnam sint a odio, eveniet in.',
+        quote: 'Administradora de empresas, ejecutiva de alto nivel orientada a resultados, con más de diez años de experiencia en Planeación estratégica, liderazgo ejecutivo, negociaciones internacionales, administración, desarrollo e integración de proyectos de innovación y tecnologías de información globales. Emprendedora Nata.',
         image: patricia,
         linkedin: 'https://www.linkedin.com/in/patricia-silva-79b631226',
-        job: 'CMO',
+        job: 'COO',
         animation: 1.5
     },
     {
@@ -37,7 +37,7 @@ export const team = [
         quote: 'Abogado alejado de las prácticas tradicionales del derecho, buscador e integrador de nuevas líneas de negocio, orientadas a desarrollar modelos novedosos y exitosos de tokenización en todas las áreas posibles y poder ofertar servicios de manera globalizada.',
         image: francisco,
         linkedin: 'https://www.linkedin.com/in/francisco-betancourt-a31163265',
-        job: 'CMO',
+        job: 'CLO',
         animation: 1.5
     },
 ]

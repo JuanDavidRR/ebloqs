@@ -18,7 +18,7 @@ const SpotifyPlayer = dynamic(() => import("@/components/SpotifyPlayer"));
 export default function Home() {
   return (
     <main>
-      <SpotifyPlayer/>
+      {/* <SpotifyPlayer/> */}
       <Hero />
       <HowWorks/>
       <Video />
@@ -31,7 +31,7 @@ export default function Home() {
       <TokenEbl />
       <Projects />
       <Team />
-      <AudioPlayer/>
+      {/* <AudioPlayer/> */}
     </main>
   );
 }

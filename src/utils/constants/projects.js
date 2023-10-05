@@ -19,10 +19,11 @@ export const projects = [
     },
     {
         id: 3,
-        title: 'Próximamente un nuevo proyecto',
-        description: 'Bonos de cárbono tokenizados.',
+        title: 'Próximamente nuevo proyecto',
+        description: `Conservación del Bosque de Neblina UKUMARI. Créditos de Carbono tokenizado`,
         image: '/images/bonos-carbono.jpeg',
-        investors: 2000,
+        investors: 4940,
+        tags: 'Arte - Ciencia - tecnología ',
         goal: '/',
         animation: 1.5,
     }

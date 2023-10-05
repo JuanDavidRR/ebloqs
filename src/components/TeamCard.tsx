@@ -39,7 +39,7 @@ const TeamCard = ({
             src={image}
             width={800}
             height={800}
-            className="h-[35vh] object-cover mx-auto mb-5"
+            className="h-[40vh] object-cover mx-auto mb-5"
             alt="imageTeam"
           />
           <h4 className="font-bold text-2xl">{fullname}</h4>
