@@ -2,11 +2,11 @@
   "name": "ebloqs-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ebloqs.com/",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@types/spotify-web-api-node": "^5.0.7",

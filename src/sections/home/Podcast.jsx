@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { TypingText } from "@/components/CustomTexts";
 import styles from "@/styles";
