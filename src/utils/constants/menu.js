@@ -7,7 +7,7 @@ export const links = [
     {
       id: 2,
       title: "Ecosistema",
-      url: "#ecosistema",
+      url: "/#ecosistema",
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export const links = [
     {
       id: 6,
       title: "Equipo ",
-      url: "#equipo",
+      url: "/#equipo",
     },
   ];
   

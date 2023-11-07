@@ -13,7 +13,6 @@ import Button from "../Button";
 
 const Navbar = () => {
   const pathname = usePathname();
-
   const [active, setActive] = useState(false);
   const handleClick = () => {
     setActive(!active);
@@ -39,14 +38,14 @@ const Navbar = () => {
             {links.map((link) => {
               return (
                 <li key={link.id}>
-                  <Link
-                    onClick={handleClick}
-                    href={link.url}
-                    className={pathname === link.url ? "active" : "link"}
-                  >
-                    {link.title}
-                  </Link>
-                </li>
+                <a
+                  onClick={handleClick}
+                  href={`${link.url}`}
+                  className={pathname === link.url ? "active" : "link"}
+                >
+                  {link.title}
+                </a>
+              </li>
               );
             })}
             <li>
