@@ -21,7 +21,7 @@ Para comenzar a trabajar en este proyecto hay dos alternativas: Descargar los ar
 
 ### Opción 1 (recomendada): Descargar el proyecto en ZIP
 
-Este proceso se realiza desde la página principal del repositorio ubicada en https://github.com/JuanDavidRR/ebloqs. Allí habrá un botón verde con la leyenda '<Code>' el cual abre el panel de opciones para descargar el repositorio. Para descargarlo simplemente se debe seleccionar la opción 'Descargar ZIP'. Posteriormente se debe descromprimir la carpeta y arrastrarla en el editor de código de preferencia (recomendamos Visual Studio Code)
+Este proceso se realiza desde la página principal del repositorio ubicada en https://github.com/JuanDavidRR/ebloqs. Allí habrá un botón verde con la leyenda <Code> el cual abre el panel de opciones para descargar el repositorio. Para descargarlo simplemente se debe seleccionar la opción (Descargar ZIP). Posteriormente se debe descromprimir la carpeta y arrastrarla en el editor de código de preferencia (recomendamos Visual Studio Code)
 
 ### Opción 2: Clonar el repositorio 
 
@@ -39,7 +39,7 @@ git clone https://github.com/JuanDavidRR/ebloqs.git
 
 Para ejecutar este paso se debe de contar con la instalación de NodeJS, NPM y tener el proyecto ya descargado.
 
-Una vez descargado o clonado el repositorio se debe ejecutar el siguiente comando para descargar los paquetes de las dependencias. El comando puede ser ejecutado en Visual Studio Code presionando. Para ello debemos ir a la parte superior de la interfaz y dar click sobre la pestaña 'Terminal' y luego seleccionar la opción 'Split terminal' . Una vez teniendo disponible la consola podemos escribir el comando:
+Una vez descargado o clonado el repositorio se debe ejecutar el siguiente comando para descargar los paquetes de las dependencias. El comando puede ser ejecutado en Visual Studio Code presionando. Para ello debemos ir a la parte superior de la interfaz y dar click sobre la pestaña (Terminal) y luego seleccionar la opción (Split terminal) . Una vez teniendo disponible la consola podemos escribir el comando:
 
 ```bash
 npm install
@@ -61,11 +61,11 @@ El puerto por defecto en el que se abrira será: http://localhost:3000/. Allí e
 Si su única intención es cambiar texto o enlaces dentro del sitio haga lo siguiente: (Se debe de contar con algún editor de código como VISUAL STUDIO CODE)
 
 #### Use el buscador de la herramienta para encontrar lo que buscador
-Ejemplo: Si desea buscar cambiar el titulo 'Soy un título secundario'. 
+Ejemplo: Si desea buscar cambiar el titulo (Soy un título secundario). 
 - Seleccione el icono de lupa ubicado en la esquina superior izquierda en el menú lateral de su Visual Studio Code. 
-- En el cuadro 'Search' coloque el texto del contenido que desea cambiar.
+- En el cuadro (Search) coloque el texto del contenido que desea cambiar.
 - Si hay alguna coincidencia debajo saldrá una sección con el fragmento que desea cambiar, de cliq a elemento. Esto lo llevará al archivo y la sección donde se encuentra dicho contenido. Simplemente realice los cambios necesarios.
-- Una vez realizados los cambios, vaya a la parte superior izquierda de su editor de código en la sección 'File' y seleccione la opción SAVE ALL o Guardar todo
+- Una vez realizados los cambios, vaya a la parte superior izquierda de su editor de código en la sección (File) y seleccione la opción SAVE ALL o Guardar todo
 
 ### Jerarquía de los archivos
 Para consultar todos los archivos core del proyecto deberá visitar el directorio SRC. En dicho directorio encontrará:
@@ -125,7 +125,7 @@ Con el explorador de archivos vamos a la carpeta raiz del proyecto y buscamos la
 
 ## 3. Entrar a cpanel y abrir el explorador de archivos
 
-Entramos a nuestro servidos de Cpanel con usuario y contraseña, en el icono de lupa buscamos 'Administrador de archivos'. Una vez allí buscamos la carpeta "public_html" dentro de ella eliminamos todos los archivos que se encuentren allí para subir una nueva actualización.
+Entramos a nuestro servidos de Cpanel con usuario y contraseña, en el icono de lupa buscamos (Administrador de archivos). Una vez allí buscamos la carpeta "public_html" dentro de ella eliminamos todos los archivos que se encuentren allí para subir una nueva actualización.
 
 
 ## 4. Subir los archivos al servidor y descomprimirlo
