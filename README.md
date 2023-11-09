@@ -53,6 +53,7 @@ Para ejecutar el proyecto en modo local se debe de ejecutar el comando en la ter
 ```javascript
 npm run dev
 ```
+
 El puerto por defecto en el que se abrira será: http://localhost:3000/. Allí estará el proyecto en ejecución. Por lo que luego de esperar debemos dirigirnos a esa dirección.
 
 ## Navegando en el proyecto
