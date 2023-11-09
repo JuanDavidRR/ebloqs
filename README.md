@@ -21,7 +21,7 @@ Para comenzar a trabajar en este proyecto hay dos alternativas: Descargar los ar
 
 ### Opción 1 (recomendada): Descargar el proyecto en ZIP
 
-Este proceso se realiza desde la página principal del repositorio ubicada en https://github.com/JuanDavidRR/ebloqs. Allí habrá un botón verde con la leyenda <Code> el cual abre el panel de opciones para descargar el repositorio. Para descargarlo simplemente se debe seleccionar la opción (Descargar ZIP). Posteriormente se debe descromprimir la carpeta y arrastrarla en el editor de código de preferencia (recomendamos Visual Studio Code)
+Este proceso se realiza desde la página principal del repositorio ubicada en https://github.com/JuanDavidRR/ebloqs. Allí habrá un botón verde con la leyenda Code el cual abre el panel de opciones para descargar el repositorio. Para descargarlo simplemente se debe seleccionar la opción (Descargar ZIP). Posteriormente se debe descromprimir la carpeta y arrastrarla en el editor de código de preferencia (recomendamos Visual Studio Code)
 
 ### Opción 2: Clonar el repositorio 
 
