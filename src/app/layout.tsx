@@ -24,6 +24,10 @@ export default function RootLayout({ children }: LayoutProps) {
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="facebook-domain-verification"
+          content="o61qdyl6f5g2guhxc8twokxz1jk8kq"
+        />
       </head>
       <body className="w-full">
         <Navbar />
